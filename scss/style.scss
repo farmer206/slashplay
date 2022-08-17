@@ -1,0 +1,135 @@
+$font-family:"Play";
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,300,400,500,700,800&display=swap&subset=cyrillic-ext);
+@import url(https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
+@import "null.scss";
+@import "_header";
+@import "_main-block";
+@import "_services";
+@import "_price";
+@import "_stats";
+@import "_rules";
+@import "_photo";
+@import "_location";
+@import "_footer";
+@import "_form";
+@import "_popup";
+
+body {
+    background-color: black;
+    color: #b8b6b4;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.up-button {
+    position: fixed;
+	bottom: 120px;
+	right: 60px;
+	z-index: 20;
+    opacity: 0;
+}
+.show {
+    opacity: 1;
+    transition: 1s;
+}
+
+.container {
+    max-width: 1046px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    box-sizing: content-box;
+}
+
+.ibg {
+    position: relative;
+}
+
+._ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+/* ---PAGE--- */
+.page {
+    flex: 1 1 auto;
+}
+.page {
+    &__main-block {
+    }
+}
+.page {
+    &__services {
+        //position: relative;
+        //z-index: 2;
+        //margin: -111px 0px 0px 0px;
+    }
+}
+.page {
+    &__price {
+    }
+}
+.page {
+    &__stats {
+    }
+}
+.page {
+    &__rules {
+    }
+}
+.page {
+    &__location {
+    }
+}
+
+/* ---HEADER BLOCK--- */
+.header-block {
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+.heder-block {
+    &__titile {
+        line-height: 142%;
+        font-weight: 400;
+        color: #46AE00;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+    &__sub-titile {
+        line-height: 142%;
+        color: #e1cb30;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1046px){
+    .container{
+        max-width: 970px;
+    }
+}
+
+@media (max-width:992px){
+    .container{
+        max-width: 750px;
+    }
+}
+
+@media (max-width:767px){
+    .container{
+        max-width: none;
+    }
+}

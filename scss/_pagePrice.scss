@@ -1,0 +1,61 @@
+/* ---Page Price--- */
+.stats {
+    padding: 0px 0px 40px 0;
+    &__header {
+        margin: 0px 0px 40px 0px;
+    }
+
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px -15px;
+    }
+
+    &__column {
+        padding: 0px 15px;
+        flex: 0 1 50%;
+    }
+}
+
+.stats-table {
+    color: #b8b6b4;
+    font-size: 16px;
+    text-align: center;
+    border: 1px dotted #46AE00;
+    border-collapse: collapse;
+    &__cell {
+        width: 250px;
+        height: 50px;
+        border: 1px dotted #46AE00;
+        &__cell-active {}
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 400;
+        color: #e1cb30;
+        font-family: 'Play';
+    }
+
+    &__info {
+        text-align: left;
+        padding-left: 30px;
+    }
+}
+
+.stats-table th:first-child {
+    text-align: left;
+    padding-left: 30px;
+}
+
+/* ---При уменьшении Page Price--- */
+@media (max-width: 767px) {
+    .stats__body {
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .stats__column:not(:last-child) {
+        margin-bottom: 40px;
+    }
+}

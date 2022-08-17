@@ -1,0 +1,10 @@
+<?php
+require('components/header.php');
+require('components/main_block.php');
+require('components/services.php');
+require('components/price.php');
+require('components/photo.php');
+require('components/stats.php');
+require('components/rules.php');
+require('components/location.php');
+require('components/footer.php');

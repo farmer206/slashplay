@@ -1,0 +1,68 @@
+/* ---SERVICES--- */
+.services {
+    &__column {
+        flex: 1 0 21%;
+        margin: 0px 0px 20px 0px;
+    }
+    // Подумать над эффектом с тенью
+    &__item:hover {
+        box-shadow: 0 4px 6px rgba(113, 255, 88, 0.25);
+    }
+
+    &__item {
+        height: 100%;
+        box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+        border: 1px solid rgba(70, 174, 0, 0.5);
+        padding: 15px;
+        background-color: rgba(80, 144, 12, 0.1);
+        border-radius: 4px;
+    }
+}
+
+.item-service {
+    text-align: center;
+    &__title {
+        letter-spacing: 0.1px;
+        font-size: 14px;
+        line-height: 133%;
+        color: #e1cb30;
+        font-family: "Press Start 2P";
+    }
+
+    &__text {
+        color: #b8b6b4;
+        line-height: 142%;
+    }
+}
+
+.item-service > *:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+}
+
+
+/* ---При увеличении экрана SERVICES--- */
+@media (min-width: 670px) {
+    .services__body {
+        display:  flex;
+        flex-wrap: wrap;
+        margin: 0px -15px -30px;
+    }
+    .services__column {
+        padding: 0px 15px;
+        margin: 0px 0px 30px 0px;
+    }
+}
+
+/* ---При уменьшении экрана SERVICES--- */
+@media (max-width: 992px) {
+    .services__column {
+        flex: 0 1 50%;
+    }
+}
+
+@media (max-width: 479px) {
+    .services__item {
+        padding: 10px;
+    }
+}
+
