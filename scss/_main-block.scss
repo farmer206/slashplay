@@ -87,15 +87,20 @@
 }
 
 /* ---При уменьшении экрана MAIN-BLOCK--- */
-@media (max-width: 670px) {
-    .main-block__body {
-        padding: 144px 0px 191px 0px;
+@media (max-width: 992px) {
+    .main-block {
+        &__body {
+            padding: 184px 0px 141px 0px;
+        }
+        &__body > *:not(:last-child) {
+            margin: 0px 0px 45px 0px;
+        }
     }
 }
 
 @media (max-width: 479px) {
     .main-block__body {
-        padding: 124px 0px 191px 0px;
+        padding: 184px 0px 101px 0px;
     }
     .main-block__title {
         font-size: 26px;

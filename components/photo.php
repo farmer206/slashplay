@@ -7,19 +7,19 @@
                         <div class="slider__items">
                             <div class="slider__item">
                                 <div class="slider__image">
-                                    <img src="/img/main/clients_1.jpg" alt="">
+                                    <img src="/img/photo/client_1.jpg" alt="Турнир">
                                 </div>
                                 <div class="slider__info">
                                     <div class="slider__header header-block">
                                         <h2 class="slider__title">Участвуй в турнирах</h2>
                                     </div>
-                                    <div class="slider__text">Во всем городе только в нашем клубе проводятся официальные турниры совместно с Карельским республиканским отделением ФКС России. Вы можете получить киберспортивный разряд, а также стать профессиональным судьей.
+                                    <div class="slider__text">Совместно с отделением ФКС России проводятся официальные турниры. Вы можете получить киберспортивный разряд, а также стать профессиональным судьей.
                                     </div>
                                 </div>
                             </div>
                             <div class="slider__item">
                                 <div class="slider__image">
-                                    <img src="/img/main/clients_2.jpg" alt="">
+                                    <img src="/img/photo/client_2.jpg" alt="Победители">
                                 </div>
                                 <div class="slider__info">
                                     <div class="slider__header header-block">
@@ -31,7 +31,7 @@
                             </div>
                             <div class="slider__item">
                                 <div class="slider__image">
-                                    <img src="/img/main/clients_3.jpg" alt="">
+                                    <img src="/img/photo/client_3.jpg" alt="Посетители">
                                 </div>
                                 <div class="slider__info">
                                     <div class="slider__header header-block">
@@ -43,7 +43,7 @@
                             </div>
                             <div class="slider__item">
                                 <div class="slider__image">
-                                    <img src="/img/main/specification1.jpg" alt="">
+                                    <img src="/img/photo/client_4.jpg" alt="Клиент">
                                 </div>
                                 <div class="slider__info">
                                     <div class="slider__header header-block">

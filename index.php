@@ -1,6 +1,6 @@
 <?php
 require('components/header.php');
-require('components/main_block.php');
+require('components/main.php');
 require('components/services.php');
 require('components/price.php');
 require('components/photo.php');

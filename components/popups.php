@@ -2,7 +2,7 @@
     <div class="popup__body">
         <div class="popup__content">
             <a href="#header" class="popup__close close-popup">
-                <img src="/img/icons/popup/close.svg" alt="">
+                <img src="/img/popup/close.svg" alt="Закрыть">
             </a>
             <div class="popup__title">Войти в аккаунт</div>
             <form action="#" id="form" class="form-block__body">
@@ -35,7 +35,7 @@
     <div class="popup__body">
         <div class="popup__content">
             <a href="#" class="popup__close close-popup">
-                <img src="/img/icons/popup/close.svg" alt="">
+                <img src="/img/popup/close.svg" alt="Закрыть">
             </a>
             <div class="popup__title">Создать аккаунт</div>
             <form action="#" id="form" class="form-block__body">
@@ -69,9 +69,12 @@
     <div class="popup__body">
         <div class="popup__content">
             <a href="#" class="popup__close close-popup">
-                <img src="/img/icons/popup/close.svg" alt="">
+                <img src="/img/popup/close.svg" alt="Закрыть">
             </a>
             <div class="popup__title">Забронировать время</div>
+            <div class="popup__tel">
+                <a href="tel:9114073668" class="header__tel">+7(911)407-36-68</a>
+            </div>
         </div>
     </div>
 </div>

@@ -21,7 +21,7 @@
                                 <li class="tabs__list-item"><span>Memory:</span> 16 GB RAM</li>
                                 <li class="tabs__list-item"><span>Graphics:</span> NVIDEA RTX 2070</li>
                                 <li class="tabs__list-item"><span>DirectX:</span> Version 12</li>
-                                <li class="tabs__list-item">Твердотелые диски(SSD)</li>
+                                <li class="tabs__list-item"><span>(SSD)</span> Твердотелые диски</li>
                             </ul>
                             <div class="tabs__text">
                                 Наши специалисты каждый день следят за качеством оборудования. Своевременно обновляют программы. Пидорят жесткий диск от всякого шлака, чтобы каждый клиент пользовался игровым компьютером с мксимальным комфортом.

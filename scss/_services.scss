@@ -1,13 +1,22 @@
 /* ---SERVICES--- */
 .services {
+    padding: 60px 0px 60px 0px;
+    &__body {
+        display: flex;
+        justify-content: space-between;
+    }
     &__column {
-        flex: 1 0 21%;
-        margin: 0px 0px 20px 0px;
+        flex: 1 0 20%;
+    //     margin: 0px 0px 20px 0px;
     }
-    // Подумать над эффектом с тенью
-    &__item:hover {
-        box-shadow: 0 4px 6px rgba(113, 255, 88, 0.25);
+
+    &__column:not(:last-child) {
+        margin: 0px 15px 0px 0px;
     }
+    // // Подумать над эффектом с тенью
+    // &__item:hover {
+    //     box-shadow: 0 4px 6px rgba(113, 255, 88, 0.25);
+    // }
 
     &__item {
         height: 100%;
@@ -40,29 +49,61 @@
 }
 
 
-/* ---При увеличении экрана SERVICES--- */
-@media (min-width: 670px) {
-    .services__body {
-        display:  flex;
-        flex-wrap: wrap;
-        margin: 0px -15px -30px;
-    }
-    .services__column {
-        padding: 0px 15px;
-        margin: 0px 0px 30px 0px;
-    }
-}
+// /* ---При увеличении экрана SERVICES--- */
+// @media (min-width: 670px) {
+//     .services__body {
+//         display:  flex;
+//         flex-wrap: wrap;
+//         margin: 0px -15px -30px;
+//     }
+//     .services__column {
+//         padding: 0px 15px;
+//         margin: 0px 0px 30px 0px;
+//     }
+// }
 
 /* ---При уменьшении экрана SERVICES--- */
 @media (max-width: 992px) {
-    .services__column {
-        flex: 0 1 50%;
+    .services {
+        &__body {
+            flex-wrap: wrap;
+        }      
+        &__column {
+            flex: 0 1 48.67%;
+        }
+        &__column:not(:last-child) {
+            margin: 0px 0px 0px 0px;
+        }
+        &__column:nth-child(1) {
+            margin-bottom: 20px;
+        }
+        &__column:nth-child(2) {
+            margin-bottom: 20px;
+        }
+        &__item {
+            border: none;
+            background-color: transparent;
+            border-radius: 0;
+            box-shadow: none;
+        }
+        &__item:hover {
+            box-shadow: none;
+        }
     }
 }
 
-@media (max-width: 479px) {
-    .services__item {
-        padding: 10px;
+@media (max-width: 526px) {
+    .services {
+        &__body {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__column {
+            width: 274px;
+        }
+        &__column:not(:last-child) {
+            margin-bottom: 20px;
+        }
     }
 }
-

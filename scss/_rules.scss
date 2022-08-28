@@ -1,13 +1,7 @@
 .rules {
-    padding: 140px 0px 0px 0px;
+    padding: 60px 0px 60px 0px;
     &__header {
         margin: 0px 0px 40px 0px;
-    }
-
-    &__body {
-    }
-
-    &__content {
     }
 
     &__items {
@@ -23,15 +17,50 @@
         position: relative;
     }
 
-    &__item::before {
-        content: url(/img/icons/check.svg);
+    &__item:nth-child(1):before {
+        content: url(/img/icons/adult.svg);
         position: absolute;
-        top: 20px;
+        top: 18px;
         left: 0;
         width: 20px;
         height: 20px;
     }
+    &__item:nth-child(2):before {
+        content: url(/img/icons/forbidden.svg);
+        position: absolute;
+        top: 18px;
+        left: 0;
+        width: 20px;
+        height: 20px;
+    }
+    &__item:nth-child(3):before {
+        content: url(/img/icons/forbidden.svg);
+        position: absolute;
+        top: 18px;
+        left: 0;
+        width: 20px;
+        height: 20px;
+    }
+    &__item:nth-child(4):before {
+        content: url(/img/icons/forbidden.svg);
+        position: absolute;
+        top: 18px;
+        left: 0;
+        width: 20px;
+        height: 20px;
+    }
+    &__item:nth-child(5):before {
+        content: url(/img/icons/check.svg);
+        position: absolute;
+        top: 18px;
+        left: 0;
+        width: 20px;
+        height: 20px;
+    }
+}
 
-    &__icon {
+@media (max-width: 726px) {
+    .rules__item {
+        font-size: 16px;
     }
 }

@@ -16,6 +16,10 @@ $font-family:"Play";
 @import "_form";
 @import "_popup";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: black;
     color: #b8b6b4;
@@ -34,9 +38,9 @@ body.lock {
 
 .up-button {
     position: fixed;
-	bottom: 120px;
-	right: 60px;
-	z-index: 20;
+	bottom: 30px;
+	right: 30px;
+	z-index: 14;
     opacity: 0;
 }
 .show {
@@ -74,9 +78,9 @@ body.lock {
 }
 .page {
     &__services {
-        //position: relative;
-        //z-index: 2;
-        //margin: -111px 0px 0px 0px;
+        position: relative;
+        z-index: 2;
+        margin: -111px 0px 0px 0px;
     }
 }
 .page {
@@ -116,20 +120,43 @@ body.lock {
     }
 }
 
-@media (max-width: 1046px){
+@media (max-width: 1200px) {
+    .up-button {
+        bottom: 60px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 1046px) {
     .container{
         max-width: 970px;
     }
 }
 
-@media (max-width:992px){
+@media (max-width: 992px) {
     .container{
         max-width: 750px;
     }
 }
 
-@media (max-width:767px){
+@media (max-width: 767px) {
     .container{
         max-width: none;
+    }
+}
+
+@media (max-width: 726px) {
+    .heder-block {
+        &__titile {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .page {
+        &__services {
+            margin: 0px 0px 0px 0px;
+        }
     }
 }

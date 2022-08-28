@@ -1,6 +1,6 @@
 /* ---LOCATION--- */
 .location {
-    padding: 140px 0px 0px 0px;
+    padding: 60px 0px 60px 0px;
     &__header {
         margin: 0px 0px 100px 0px;
     }
@@ -104,9 +104,6 @@
 }
 
 @media (max-width: 992px) {
-    .location {
-        padding: 50px 0px 50px 0px;
-    }
     .location__header {
         margin: 0px 0px 30px 0px;
     }
@@ -129,9 +126,6 @@
 }
 
 @media (max-width: 767px) {
-    .location {
-        padding: 20px 0px 50px 0px;
-    }
     .location__map:not(:last-child) {
         margin: 30px 0px 0px 0px;
     }

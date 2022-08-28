@@ -20,22 +20,12 @@
                     </div>
                     <nav class="menu__body menu">
                         <ul class="menu__list">
-                            <!-- <li><a href="#services" class="menu__link">Сервис</a></li> -->
-                            <li><a href="#price" class="menu__link">Price</a></li>
-                            <li><a href="#rules" class="menu__link">Rules</a></li>
-                            <li>
-                                <a href="#" class="menu__link">Info</a>
-                                <span class="menu__arrow"></span>
-                                <ul class="menu__sub-list">
-                                    <li class="menu__sub-link"><a href="#photo" class="menu__link">Photo</a></li>
-                                    <li class="menu__sub-link"><a href="#stats" class="menu__link">Stats</a></li>
-                                    <li class="menu__sub-link"><a href="#location" class="menu__link">Contacts</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#popup" class="menu__link popup-link">
-                                    <!-- <img src="/img/icons/after/account.svg" alt=""> -->
-                                    Sign in
-                                </a></li>
+                            <li><a href="#price" class="menu__link">Прайс</a></li>
+                            <li><a href="#photo" class="menu__link">Фото</a></li>
+                            <li><a href="#stats" class="menu__link">Статы</a></li>
+                            <li><a href="#rules" class="menu__link">Правила</a></li>
+                            <li><a href="#location" class="menu__link">Контакты</a></li>
+                            <li><a href="#popup" class="menu__link popup-link">Sign in</a></li>
                         </ul>
                     </nav>
                 </div>
