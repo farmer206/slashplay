@@ -1,7 +1,7 @@
 "use strict";
 
 // Прокрутка страницы
-let upButton = document.querySelector('.up-button');
+const upButton = document.querySelector('.up-button');
 window.onscroll = function () {
     if (window.pageYOffset > 200) {
         upButton.classList.add('show');

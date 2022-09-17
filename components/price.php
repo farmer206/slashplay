@@ -1,4 +1,4 @@
-<section id="price" class="page__price price">
+<section class="page__price price">
     <div class="price__container container">
         <div class="price__content">
             <div class="price__header header-block">
@@ -8,7 +8,7 @@
                 Здесь ты сможешь прикоснуться к закрытому и уникальному сообществу единомышленников, где тебя ждёт океан эмоций, огромное количество новых знакомств, ценные призы, приглашения на закрытые мероприятия и скидки. Ты станешь одним из вдохновителей и творцов киберспорта в России!
             </div>
             <div class="price__button">
-                <a class="btn btn__transparent" href="#">Price list</a>
+                <a class="btn btn__transparent" href="/pagePrice.php">Price list</a>
             </div>
         </div>
         <div class="price__table">
@@ -16,7 +16,7 @@
                 <div class="price__cell">
                     <div class="price__item item-price">
                         <div class="item-price__icon">
-                            <img src="/img/price/time.svg" alt="Час">
+                            <img loading="lazy" src="/img/price/time.svg" alt="Час">
                         </div>
                         <h3 class="item-price__title">Час</h3>
                         <div class="item-price__text">
@@ -27,7 +27,7 @@
                 <div class="price__cell">
                     <div class="price__item item-price">
                         <div class="item-price__icon">
-                            <img src="/img/price/night.svg" alt="Ночь">
+                            <img loading="lazy" src="/img/price/night.svg" alt="Ночь">
                         </div>
                         <h3 class="item-price__title">Ночь</h3>
                         <div class="item-price__text">
@@ -40,7 +40,7 @@
                 <div class="price__cell">
                     <div class="price__item item-price">
                         <div class="item-price__icon">
-                            <img src="/img/price/box.svg" alt="Пакетные предложения">
+                            <img loading="lazy" src="/img/price/box.svg" alt="Пакетные предложения">
                         </div>
                         <h3 class="item-price__title">Пакетные предложения</h3>
                         <div class="item-price__text">
@@ -51,7 +51,7 @@
                 <div class="price__cell">
                     <div class="price__item item-price">
                         <div class="item-price__icon">
-                            <img src="/img/price/sale.svg" alt="Скидки">
+                            <img loading="lazy" src="/img/price/sale.svg" alt="Скидки">
                         </div>
                         <h3 class="item-price__title">Скидки и бонусы</h3>
                         <div class="item-price__text">

@@ -3,13 +3,13 @@
         <div class="footer__subscribe container">
             <div class="footer__social social">
                 <a href="#" class="social__item">
-                    <img src="img/footer/telegram.svg" alt="Telegram">
+                    <img loading="lazy" src="img/footer/telegram.svg" alt="Telegram">
                 </a>
-                <a href="https://www.youtube.com/channel/UCkKVdpVWu8r3rE_sNlhnFjg" class="social__item">
-                    <img src="img/footer/youtube.svg" alt="Youtube">
+                <a target="_blank" href="https://www.youtube.com/channel/UCkKVdpVWu8r3rE_sNlhnFjg" class="social__item">
+                    <img loading="lazy" src="img/footer/youtube.svg" alt="Youtube">
                 </a>
-                <a href="https://vk.com/slashplay_ptz" class="social__item">
-                    <img src="img/footer/vk.svg" alt="ВКонтакте">
+                <a target="_blank" href="https://vk.com/slashplay_ptz" class="social__item">
+                    <img loading="lazy" src="img/footer/vk.svg" alt="ВКонтакте">
                 </a>
             </div>
         </div>
@@ -38,7 +38,6 @@ require('popups.php');
 ?>
 </div>
 <script src="scripts/isMobile.js"></script>
-<script src="scripts/anchor.js"></script>
 <script src="scripts/menuIcon.js"></script>
 <script src="scripts/upButton.js"></script>
 <script src="scripts/popupLinks.js"></script>

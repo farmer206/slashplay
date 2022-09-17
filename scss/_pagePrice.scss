@@ -1,32 +1,34 @@
-/* ---Page Price--- */
-.stats {
-    padding: 0px 0px 40px 0;
+/* ---pagePrice--- */
+.loyalty {
+    padding: 104px 0px 40px 0;
     &__header {
         margin: 0px 0px 40px 0px;
     }
 
     &__body {
         display: flex;
+        flex-direction: column;
+        align-items: center;
         flex-wrap: wrap;
         margin: 0px -15px;
     }
 
     &__column {
         padding: 0px 15px;
-        flex: 0 1 50%;
+        //flex: 0 1 50%;
     }
 }
 
-.stats-table {
+.loyalty-table {
     color: #b8b6b4;
     font-size: 16px;
     text-align: center;
-    border: 1px dotted #46AE00;
+    border: 1px solid rgba(70, 174, 0, 0.55);
     border-collapse: collapse;
     &__cell {
         width: 250px;
         height: 50px;
-        border: 1px dotted #46AE00;
+        border: 1px solid rgba(70, 174, 0, 0.25);
         &__cell-active {}
     }
 
@@ -43,19 +45,23 @@
     }
 }
 
-.stats-table th:first-child {
+.loyalty-table th:first-child {
     text-align: left;
     padding-left: 30px;
 }
 
-/* ---При уменьшении Page Price--- */
-@media (max-width: 767px) {
-    .stats__body {
-        flex-direction: column;
-        align-items: center;
-    
-    }
-    .stats__column:not(:last-child) {
-        margin-bottom: 40px;
-    }
+.loyalty__column:not(:last-child) {
+    margin-bottom: 40px;
 }
+
+/* ---При уменьшении Page Price--- */
+// @media (max-width: 767px) {
+//     .loyalty__body {
+//         flex-direction: column;
+//         align-items: center;
+    
+//     }
+//     .loyalty__column:not(:last-child) {
+//         margin-bottom: 40px;
+//     }
+// }

@@ -1,5 +1,3 @@
-'use strict';
-
 const WRAPPER_SELECTOR = '.slider__body';
 const ITEMS_SELECTOR = '.slider__items';
 const ITEM_SELECTOR = '.slider__item';
@@ -467,23 +465,6 @@ class ChiefSlider {
         this._refresh();
     }
 }
-
-// выполняем инициализацию слайдера с настройками по умолчанию
-//new ChiefSlider('.slider');
-
-// после готовности DOM
-// document.addEventListener('DOMContentLoaded', function() {
-//     new ChiefSlider('.slider');
-// });
-
-// после готовности DOM
-// document.addEventListener('DOMContentLoaded', function() {
-//     var elms = document.querySelectorAll('.slider');
-//     for (var i = 0, len = elms.length; i < len; i++) {
-//       // инициализация elms[i] в качестве слайдера
-//       new ChiefSlider(elms[i]);
-//     }
-//   });
 
 document.addEventListener('DOMContentLoaded', function () {
     const slider = new ChiefSlider('.slider', {

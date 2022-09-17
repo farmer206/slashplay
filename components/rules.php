@@ -1,4 +1,4 @@
-<section id="rules" class="page__rules rules">
+<section class="page__rules rules">
     <div class="rules__container container">
         <div class="rules__header header-block">
             <h2 class="heder-block__titile">Правила посещения клуба</h2>

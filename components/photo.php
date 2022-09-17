@@ -1,4 +1,4 @@
-<section id="photo" class="page__photo photo">
+<section class="page__photo photo">
     <div class="photo__container container">
         <div class="photo__wrapper">
             <div class="slider">
@@ -7,7 +7,7 @@
                         <div class="slider__items">
                             <div class="slider__item">
                                 <div class="slider__image">
-                                    <img src="/img/photo/client_1.jpg" alt="Турнир">
+                                    <img loading="lazy" src="/img/photo/client_1.jpg" alt="Турнир">
                                 </div>
                                 <div class="slider__info">
                                     <div class="slider__header header-block">
@@ -19,7 +19,7 @@
                             </div>
                             <div class="slider__item">
                                 <div class="slider__image">
-                                    <img src="/img/photo/client_2.jpg" alt="Победители">
+                                    <img loading="lazy" src="/img/photo/client_2.jpg" alt="Победители">
                                 </div>
                                 <div class="slider__info">
                                     <div class="slider__header header-block">
@@ -31,7 +31,7 @@
                             </div>
                             <div class="slider__item">
                                 <div class="slider__image">
-                                    <img src="/img/photo/client_3.jpg" alt="Посетители">
+                                    <img loading="lazy" src="/img/photo/client_3.jpg" alt="Посетители">
                                 </div>
                                 <div class="slider__info">
                                     <div class="slider__header header-block">
@@ -43,7 +43,7 @@
                             </div>
                             <div class="slider__item">
                                 <div class="slider__image">
-                                    <img src="/img/photo/client_4.jpg" alt="Клиент">
+                                    <img loading="lazy" src="/img/photo/client_4.jpg" alt="Клиент">
                                 </div>
                                 <div class="slider__info">
                                     <div class="slider__header header-block">

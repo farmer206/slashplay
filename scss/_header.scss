@@ -15,12 +15,12 @@
 }
 
 .header {
-      position: fixed;
+      position: absolute;
       width: 100%;
       left: 0;
       top: 0;
       z-index: 20;
-      background-color: black;
+      background-color: transparent;
       &__container {
             display: flex;
             padding: 0px 15px;
@@ -28,175 +28,131 @@
             justify-content: space-between;
             min-height: 104px;
       }
-
 	&__logo {
             font-size: 24px;
             font-family: "Press Start 2P";
             font-weight: 400;
             color: #66ff00;
 	}
-
       &__logo span {
             animation: anime infinite 4s linear;
       }
-
-	&__menu {
-      }
 }
 
-.menu {
+.menu {   
       &__icon {
-            display: block;
-            position: fixed;
-            width: 30px;
-            height: 18px;
-            z-index: 5;
-            cursor: pointer;
-            top: 40px;
-            right: 32px;
+            display: none;
       }
-      
-      &__body {
-            position: fixed;
-            top: 0;
-            left: 100%;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.92);
-            padding: 120px 30px 30px 30px;
-            transition: left 0.3s ease 0s;
-            overflow: auto;
-            text-align: center;
-      }
-
-      &__list {
-            // display: flex;
-            // align-items: center;
-      }
-
       &__list  > li {
             position: relative;
             margin: 0px 0px 0px 20px;
       }
-
       &__link {
             line-height: calc(24 / 14 * 100%);
             color: #66ff00;
             font-weight: 500;
-            font-size: 24px;
+            font-size: 18px;
             text-transform: uppercase;
       }
-
       &__link:hover {
             color: #409f01;
       }
-}
-
-.menu__icon span,
-.menu__icon::before,
-.menu__icon::after {
-      background-color: #66ff00;
-      position: absolute;
-      width: 100%;
-      height: 10%;
-      left: 0;
-      transition: all 0.3s ease 0s;
-      }
-
-.menu__icon::before,
-.menu__icon::after {
-      content: '';
-}
-.menu__icon::before {
-      top: 0;
-}
-.menu__icon::after {
-      bottom: 0;
-}
-.menu__icon span {
-      top: 50%;
-      transform: scale(1) translate(0px, -50%);
-}
-
-.menu__icon._active span {
-      transform: scale(0) translate(0px, -50%);
-}
-
-.menu__icon._active::before {
-      top: 50%;
-      transform: rotate(-45deg) translate(0px, -50%);
-}
-
-.menu__icon._active::after {
-      bottom: 50%;
-      transform: rotate(45deg) translate(0px, 50%);
-}
-
-body._pc .menu__list > li:hover .menu__sub-list {
-      opacity: 1;
-      visibility: visible;
-      transform: translate(0px, 0px);
-      pointer-events: all;
-}
-
-body._touch .menu__list > li {
-      display: flex;
-      align-items: center;
 }
 
 body._touch .menu__link {
       flex: 1 1 auto;
 }
 
-body._touch .menu__arrow {
-      display: block;
-      width: 0;
-      height: 0;
-      margin: 0px 0px 0px 5px;
-      transition: transform 0.3s ease 0s;
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-      border-top: 10px solid #66ff00;
-}
-
-body._touch .menu__list > li._active .menu__sub-list {
-      opacity: 1;
-      visibility: visible;
-      transform: translate(0px, 0px);
-      pointer-events: all;
-}
-
-body._touch .menu__list > li._active .menu__arrow {
-      transform: rotate(-180deg);
-}
-
 .menu__body._active {
       left: 0;
 }
 
-.menu__body::before {
-      content: "";
-      position: fixed;
-      width: 100%;
-      top: 0;
-      left: 0;
-      height: 70px;
-      z-index: 2;
+@media (min-width: 767px) {
+      .menu__list {
+            display: flex;
+            align-items: center;
+      }
+      .menu_list > li {
+            padding: 10px 0;
+      }
 }
 
-.menu__list > li {
-      flex-wrap: wrap;
-      margin: 0px 0px 30px 0px;
-}
-
-.menu__list > li:last-child {
-      margin-bottom: 0px;
-}
-
-@media (max-width: 1200px) {
+@media (max-width: 767px) {
       .menu {
             &__icon {
-                  right: 12px;
+                  display: block;
+                  position: relative;
+                  width: 30px;
+                  height: 18px;
+                  z-index: 5;
+                  cursor: pointer;
             }
+            &__body {
+                  position: fixed;
+                  top: 0;
+                  left: 100%;
+                  width: 100%;
+                  height: 100%;
+                  background-color: rgba(0, 0, 0, 0.92);
+                  padding: 120px 30px 30px 30px;
+                  transition: left 0.3s ease 0s;
+                  overflow: auto;
+                  text-align: center;
+            }
+            &__link  {
+                  font-size: 24px;
+            }
+      }
+      .menu__body::before {
+            content: "";
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 70px;
+            z-index: 2;
+      }     
+      .menu__icon span,
+      .menu__icon::before,
+      .menu__icon::after {
+            background-color: #66ff00;
+            position: absolute;
+            width: 100%;
+            height: 10%;
+            left: 0;
+            transition: all 0.3s ease 0s;
+      }
+      .menu__icon::before,
+      .menu__icon::after {
+            content: '';
+      }
+      .menu__icon::before {
+            top: 0;
+      }
+      .menu__icon::after {
+            bottom: 0;
+      }
+      .menu__icon span {
+            top: 50%;
+            transform: scale(1) translate(0px, -50%);
+      }
+      .menu__icon._active span {
+            transform: scale(0) translate(0px, -50%);
+      }
+      .menu__icon._active::before {
+            top: 50%;
+            transform: rotate(-45deg) translate(0px, -50%);
+      }
+      .menu__icon._active::after {
+            bottom: 50%;
+            transform: rotate(45deg) translate(0px, 50%);
+      }
+      .menu__list > li {
+            flex-wrap: wrap;
+            margin: 0px 0px 30px 0px;
+      }
+      
+      .menu__list > li:last-child {
+            margin-bottom: 0px;
       }
 }

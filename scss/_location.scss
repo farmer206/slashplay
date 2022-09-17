@@ -1,22 +1,19 @@
 /* ---LOCATION--- */
 .location {
-    padding: 60px 0px 60px 0px;
+    padding: 30px 0px 60px 0px;
     &__header {
         margin: 0px 0px 100px 0px;
     }
-
     &__body {
         display: flex;
         align-items: flex-start;
     }
-
-    &__map {
+    &__video {
         flex: 0 0 57%;
         position: relative;
         padding: 0px 0px 42.25% 0px;
     }
-
-    &__map iframe {
+    &__video iframe {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -24,13 +21,11 @@
         left: 0;
         object-fit: cover;
     }
-
     &__content {
         flex: 1 1 auto;
         padding: 20px 0px 0px 121px;
         color: #b8b6b4;
     }
-
     &__title {
         line-height: 142%;
         font-weight: 400;
@@ -39,25 +34,20 @@
         text-transform: uppercase;
         text-align: left;
     }
-
     &__title:not(:last-child) {
         margin: 0px 0px 10px 0px;
     }
-
     &__text {
         line-height: 142%;
         color: #e1cb30;
         font-size: 16px;
     }
-
     &__items {
         margin: 40px 0px 0px 0px;
     }
-
     &__item {
         margin: 0px 0px 30px 0px;
     }
-
     &__item:not(:last-child) {
         margin: 0px 0px 50px 0px;
     }
@@ -70,27 +60,22 @@
         display: flex;
         align-items: center;
     }
-
     &__body {
         flex: 1 1 auto;
         padding: 0px 0px 0px 20px;
     }
-
     &__title {
         font-weight: 400;
         font-size: 18px;
         line-height: 150%;
     }
-
     &__title:not(:last-child) {
         margin: 0px 0px 5px 0px;
     }
-
     &__text {
         line-height: 142%;
         font-size: 16px;
     }
-
     &__text a {
         color: #66ff00;
     }
@@ -114,10 +99,10 @@
     .location__content {
         padding: 0;
     }
-    .location__map {
-        padding: 0px 0px 56.25% 0px;
+    .location__video {
+        padding: 0px 0px 50% 0px;
     }
-    .location__map:not(:last-child) {
+    .location__video:not(:last-child) {
         margin: 50px 0px 0px 0px;
     }
     .location__title {
@@ -126,7 +111,7 @@
 }
 
 @media (max-width: 767px) {
-    .location__map:not(:last-child) {
+    .location__video:not(:last-child) {
         margin: 30px 0px 0px 0px;
     }
     .location__item:not(:last-child) {

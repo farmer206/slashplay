@@ -13,6 +13,6 @@
             </div>
         </div>
         <div class="main-block__image _ibg">
-            <img src="img/main/main-block.png" alt="Сетка в пространстве">
+            <img src="img/main/main-block_1.jpg" alt="Сетка в пространстве">
         </div>
     </section>

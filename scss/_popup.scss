@@ -18,10 +18,9 @@
         justify-content: center;
         padding: 30px 10px;
     }
-
     &__content {
         background-color: black;
-        max-width: 450px;
+        max-width: 350px;
         padding: 30px;
         position: relative;
         transition: all 0.8s ease 0s;
@@ -29,13 +28,11 @@
         transform: translate(0px, -100%);
         border: 1px solid rgba(70, 174, 0, 0.5);
     }
-
     &__close {
         position: absolute;
         right: 10px;
         top: 10px;
     }
-
     &__title {
         font-size: 24px;
         font-weight: 400;
@@ -44,14 +41,13 @@
         text-align: center;
         color: #46AE00;
     }
-
     &__text {
         text-align: center;
-        font-size: 18px;
+        font-size: 16px;
         margin: 1.5em 0px 0px 0px;
-        text-transform: uppercase;
+        //text-transform: uppercase;
+        color: #46AE00;
     }
-
     &__tel {
         
     }

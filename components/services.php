@@ -4,18 +4,18 @@
             <div class="services__column">
                 <div class="services__item item-service">
                     <div class="item-service__icon">
-                        <img src="img/main/icons/wi-fi.svg" alt="Wi-Fi">
+                        <img loading="lazy" src="img/main/icons/wi-fi.svg" alt="Wi-Fi">
                     </div>
                     <h3 class="item-service__title">Wi-fi</h3>
                     <div class="item-service__text">
-                        1Gb<br>Скорость интернета
+                        1 Gbit<br>Скорость интернета
                     </div>
                 </div>
             </div>
             <div class="services__column">
                 <div class="services__item item-service">
                     <div class="item-service__icon">
-                        <img src="img/main/icons/pc-games.svg" alt="Игры">
+                        <img loading="lazy" src="img/main/icons/pc-games.svg" alt="Игры">
                     </div>
                     <h3 class="item-service__title">Игры</h3>
                     <div class="item-service__text">
@@ -26,7 +26,7 @@
             <div class="services__column">
                 <div class="services__item item-service">
                     <div class="item-service__icon">
-                        <img src="img/main/icons/drink.svg" alt="Напитки">
+                        <img loading="lazy" src="img/main/icons/drink.svg" alt="Напитки">
                     </div>
                     <h3 class="item-service__title">Напитки</h3>
                     <div class="item-service__text">
@@ -37,7 +37,7 @@
             <div class="services__column">
                 <div class="services__item item-service">
                     <div class="item-service__icon">
-                        <img src="img/main/icons/personal.svg" alt="Администраторы">
+                        <img loading="lazy" src="img/main/icons/personal.svg" alt="Администраторы">
                     </div>
                     <h3 class="item-service__title">Админы</h3>
                     <div class="item-service__text">

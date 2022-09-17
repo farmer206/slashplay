@@ -1,35 +1,29 @@
 .footer {
-	padding: 60px 0px 0px 0px;
+	padding: 20px 0px 0px 0px;
 	&__top {
 		background-color: rgb(8, 8, 8);
 		padding: 50px 0;
 	}
-
 	&__social {
 		display: flex;
 		flex-wrap: wrap;
 		margin: 0px -15px;
 		justify-content: center;
 	}
-
 	&__bottom {
 		background-color: rgb(8, 8, 8);
 		padding: 25px 0;
 	}
-
 	&__container {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
-
 	&__privacy a {
 		line-height: 171%;
 		color: #e1cb30;
 	}
-
 	&__author {}
-
 	&__author a {
 		color: #46AE00;
 	}
@@ -52,9 +46,20 @@
 	.footer__container {
 		flex-direction: column;
 	}
-
 	.footer__privacy a {
 		margin: 0px 0px 15px 0px;
 		text-align: center;
+	}
+	.social__item:nth-child(1) img {
+		width: 32px;
+		height: 32px;
+	}
+	.social__item:nth-child(2) img {
+		width: 46px;
+		height: 32px;
+	}
+	.social__item:nth-child(3) img {
+		width: 32px;
+		height: 32px;
 	}
 }

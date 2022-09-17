@@ -93,10 +93,11 @@ function bodyUnLock() {
         unlock = true;
     }, timeout);
 }
-// Не работает закрытие попапа при клике на esc
-// document.addEventListener('keydown', function (e) {
-//     if (e.which === 27) {
-//         const popupActive = document.querySelector('.popup.open');
-//         popupClose(popupActive);
-//     }
-// });
+
+// Закрытие попапа при клике на esc
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+        const popupActive = document.querySelector('.popup.open');
+        popupClose(popupActive);
+    }
+});
