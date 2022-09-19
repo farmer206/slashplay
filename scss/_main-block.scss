@@ -17,11 +17,19 @@
         letter-spacing: 0.2px;
         font-weight: 400;
         color: #46AE00;
+
+        transform: translate(0px, 100%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
     }
     &__text {
         color: #b8b6b4;
         font-size: 16px;
         line-height: 150%;
+
+        transform: translate(0px, 100%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
     }
     &__text span {
         animation: anime infinite 6s linear;
@@ -30,6 +38,10 @@
         display: flex;
         flex-wrap: wrap;
         margin: -10px 0;
+
+        transform: translate(0px, 100%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
     }
     &__button {
         border: 1px solid rgba(70, 174, 0, 0.5);
@@ -67,6 +79,23 @@
         top: 0;
         left: 0;
     }
+}
+
+.main-block__title._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.main-block__text._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.2s;
+}
+
+.main-block__buttons._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.4s;
 }
 
 /* ---При увеличении экрана MAIN-BLOCK--- */

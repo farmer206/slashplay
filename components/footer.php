@@ -18,7 +18,7 @@
     <div class="footer__bottom">
         <div class="footer__container container">
             <div class="footer__privacy">
-                <div class="">© 2022 Все права защищены</div>
+                <div class="">&copy; 2022 Все права защищены</div>
                 <div class="footer__menu">
                     <a href="#">Политика конфиденциальности</a>
                     <a href="#"></a>
@@ -34,10 +34,11 @@
     <a href="#"><img src="/img/footer/up-arrow.svg" alt="Вверх"></a>
 </div>
 <?php
-require('popups.php');
+require('popup.php');
 ?>
 </div>
 <script src="scripts/isMobile.js"></script>
+<script src="scripts/animItems.js"></script>
 <script src="scripts/menuIcon.js"></script>
 <script src="scripts/upButton.js"></script>
 <script src="scripts/popupLinks.js"></script>

@@ -1,14 +1,14 @@
 <section class="page__price price">
     <div class="price__container container">
         <div class="price__content">
-            <div class="price__header header-block">
-                <h2 class="price__titile">Стоимость аренды</h2>
+            <div class="price__header header-block anim-items anim-no-hide">
+                <h2 class="price__titile anim-show-left">Стоимость аренды</h2>
             </div>
-            <div class="price__text">
-                Здесь ты сможешь прикоснуться к закрытому и уникальному сообществу единомышленников, где тебя ждёт океан эмоций, огромное количество новых знакомств, ценные призы, приглашения на закрытые мероприятия и скидки. Ты станешь одним из вдохновителей и творцов киберспорта в России!
+            <div class="price__text anim-items anim-no-hide">
+                <p class="anim-show-left">Здесь ты сможешь прикоснуться к закрытому и уникальному сообществу единомышленников, где тебя ждёт океан эмоций, огромное количество новых знакомств, ценные призы, приглашения на закрытые мероприятия и скидки. Ты станешь одним из вдохновителей и творцов киберспорта в России!</p>
             </div>
-            <div class="price__button">
-                <a class="btn btn__transparent" href="/pagePrice.php">Price list</a>
+            <div class="price__button anim-items anim-no-hide">
+                <a class="btn btn__transparent anim-show-left" href="/pages/pagePrice.php">Price list</a>
             </div>
         </div>
         <div class="price__table">

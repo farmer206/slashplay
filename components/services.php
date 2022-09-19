@@ -1,7 +1,7 @@
 <section class="page__services services">
     <div class="services__container container">
-        <div class="services__body">
-            <div class="services__column">
+        <div class="services__body anim-items anim-no-hide">
+            <div class="services__column anim-show-top">
                 <div class="services__item item-service">
                     <div class="item-service__icon">
                         <img loading="lazy" src="img/main/icons/wi-fi.svg" alt="Wi-Fi">
@@ -12,7 +12,7 @@
                     </div>
                 </div>
             </div>
-            <div class="services__column">
+            <div class="services__column anim-show-top">
                 <div class="services__item item-service">
                     <div class="item-service__icon">
                         <img loading="lazy" src="img/main/icons/pc-games.svg" alt="Игры">
@@ -23,7 +23,7 @@
                     </div>
                 </div>
             </div>
-            <div class="services__column">
+            <div class="services__column anim-show-top">
                 <div class="services__item item-service">
                     <div class="item-service__icon">
                         <img loading="lazy" src="img/main/icons/drink.svg" alt="Напитки">
@@ -34,7 +34,7 @@
                     </div>
                 </div>
             </div>
-            <div class="services__column">
+            <div class="services__column anim-show-top">
                 <div class="services__item item-service">
                     <div class="item-service__icon">
                         <img loading="lazy" src="img/main/icons/personal.svg" alt="Администраторы">

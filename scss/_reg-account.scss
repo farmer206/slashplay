@@ -1,0 +1,25 @@
+.reg-account {
+    padding: 184px 0px 20px 0px;
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 10px;
+    }
+
+    &__content {
+        background-color: black;
+        max-width: 350px;
+        padding: 30px;
+        transition: all 0.8s ease 0s;
+        border: 1px solid rgba(70, 174, 0, 0.5);
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 16px;
+        margin: 1em 0px 0px 0px;
+        //text-transform: uppercase;
+        color: #46AE00;
+    }
+}

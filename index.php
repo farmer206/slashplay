@@ -1,4 +1,5 @@
 <?php
+require_once('bd.php');
 require('components/header.php');
 require('components/main.php');
 require('components/services.php');

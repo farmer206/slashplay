@@ -259,11 +259,17 @@ body._touch .menu__link {
   letter-spacing: 0.2px;
   font-weight: 400;
   color: #46AE00;
+  transform: translate(0px, 100%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
 }
 .main-block__text {
   color: #b8b6b4;
   font-size: 16px;
   line-height: 150%;
+  transform: translate(0px, 100%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
 }
 .main-block__text span {
   -webkit-animation: anime infinite 6s linear;
@@ -273,6 +279,9 @@ body._touch .menu__link {
   display: flex;
   flex-wrap: wrap;
   margin: -10px 0;
+  transform: translate(0px, 100%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
 }
 .main-block__button {
   border: 1px solid rgba(70, 174, 0, 0.5);
@@ -308,6 +317,23 @@ body._touch .menu__link {
   height: 100%;
   top: 0;
   left: 0;
+}
+
+.main-block__title._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.main-block__text._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.2s;
+}
+
+.main-block__buttons._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.4s;
 }
 
 /* ---При увеличении экрана MAIN-BLOCK--- */
@@ -452,12 +478,17 @@ body._touch .menu__link {
   font-size: 24px;
   text-transform: uppercase;
   text-align: left;
+  transition: all 0.8 ease 0s;
 }
 .price__text {
   font-size: 18px;
   font-weight: 400;
   line-height: 2;
   margin-bottom: 49px;
+  transition: all 0.8 ease 0.4s;
+}
+.price__button {
+  transition: all 0.8 ease 0.8s;
 }
 .price__button .btn {
   font-size: 20px;
@@ -623,57 +654,6 @@ body._touch .menu__link {
     border-bottom: 1px solid rgba(70, 174, 0, 0.5);
   }
 }
-/* ---pagePrice--- */
-.loyalty {
-  padding: 104px 0px 40px 0;
-}
-.loyalty__header {
-  margin: 0px 0px 40px 0px;
-}
-.loyalty__body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 0px -15px;
-}
-.loyalty__column {
-  padding: 0px 15px;
-}
-
-.loyalty-table {
-  color: #b8b6b4;
-  font-size: 16px;
-  text-align: center;
-  border: 1px solid rgba(70, 174, 0, 0.55);
-  border-collapse: collapse;
-}
-.loyalty-table__cell {
-  width: 250px;
-  height: 50px;
-  border: 1px solid rgba(70, 174, 0, 0.25);
-}
-.loyalty-table__title {
-  font-size: 18px;
-  font-weight: 400;
-  color: #e1cb30;
-  font-family: "Play";
-}
-.loyalty-table__info {
-  text-align: left;
-  padding-left: 30px;
-}
-
-.loyalty-table th:first-child {
-  text-align: left;
-  padding-left: 30px;
-}
-
-.loyalty__column:not(:last-child) {
-  margin-bottom: 40px;
-}
-
-/* ---При уменьшении Page Price--- */
 .stats {
   padding: 30px 0px 60px 0px;
 }
@@ -814,6 +794,10 @@ body._touch .menu__link {
     padding: 0;
     margin-top: 20px;
   }
+  .tabs__btn:not(.tabs__btn-active):hover,
+.tabs__btn:not(.tabs__btn-active):focus {
+    box-shadow: none;
+  }
 }
 .rules {
   padding: 30px 0px 60px 0px;
@@ -871,6 +855,35 @@ body._touch .menu__link {
   left: 0;
   width: 20px;
   height: 20px;
+}
+
+.rules__items li {
+  transform: translate(-120%, 0px);
+  transition: all 0.3s ease 0s;
+}
+
+.rules__items._active li:nth-child(1) {
+  transition: all 0.8s ease 0s;
+}
+
+.rules__items._active li:nth-child(2) {
+  transition: all 0.8s ease 0.2s;
+}
+
+.rules__items._active li:nth-child(3) {
+  transition: all 0.8s ease 0.4s;
+}
+
+.rules__items._active li:nth-child(4) {
+  transition: all 0.8s ease 0.6s;
+}
+
+.rules__items._active li:nth-child(5) {
+  transition: all 0.8s ease 0.8s;
+}
+
+.rules__items._active li {
+  transform: translate(0px, 0px);
 }
 
 @media (max-width: 726px) {
@@ -1414,19 +1427,26 @@ body._touch .menu__link {
   top: 10px;
 }
 .popup__title {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  margin: 0px 0px 1em 0px;
+  margin: 1em 0px 1em 0px;
   text-align: center;
   color: #46AE00;
 }
 .popup__text {
   text-align: center;
   font-size: 16px;
-  margin: 1.5em 0px 0px 0px;
+  margin: 1em 0px 0px 0px;
   color: #46AE00;
 }
+.popup__tel {
+  margin: 1em 0px 0px 0px;
+  text-align: center;
+  color: #e1cb30;
+  font-size: 18px;
+}
+
 .popup-link {
   color: #e1cb30;
 }
@@ -1445,6 +1465,106 @@ body._touch .menu__link {
   opacity: 1;
 }
 
+.login-account {
+  padding: 184px 0px 20px 0px;
+}
+.login-account__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+.login-account__content {
+  background-color: black;
+  max-width: 350px;
+  padding: 30px;
+  transition: all 0.8s ease 0s;
+  border: 1px solid rgba(70, 174, 0, 0.5);
+}
+.login-account__text {
+  text-align: center;
+  font-size: 16px;
+  margin: 1em 0px 0px 0px;
+  color: #46AE00;
+}
+
+.reg-account {
+  padding: 184px 0px 20px 0px;
+}
+.reg-account__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+.reg-account__content {
+  background-color: black;
+  max-width: 350px;
+  padding: 30px;
+  transition: all 0.8s ease 0s;
+  border: 1px solid rgba(70, 174, 0, 0.5);
+}
+.reg-account__text {
+  text-align: center;
+  font-size: 16px;
+  margin: 1em 0px 0px 0px;
+  color: #46AE00;
+}
+
+/* ---pagePrice--- */
+.loyalty {
+  padding: 104px 0px 40px 0;
+}
+.loyalty__header {
+  margin: 0px 0px 40px 0px;
+}
+.loyalty__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0px -15px;
+}
+.loyalty__column {
+  padding: 0px 15px;
+}
+
+.loyalty-table {
+  color: #b8b6b4;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid rgba(70, 174, 0, 0.55);
+  border-collapse: collapse;
+}
+.loyalty-table__cell {
+  width: 250px;
+  height: 50px;
+  border: 1px solid rgba(70, 174, 0, 0.25);
+}
+.loyalty-table__title {
+  font-size: 18px;
+  font-weight: 400;
+  color: #e1cb30;
+  font-family: "Play";
+}
+.loyalty-table__info {
+  text-align: left;
+  padding-left: 30px;
+}
+
+.loyalty-table th:first-child {
+  text-align: left;
+  padding-left: 30px;
+}
+
+.loyalty__column:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+/* ---При уменьшении Page Price--- */
+.user-account {
+  padding: 184px 0px 20px 0px;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -1471,6 +1591,30 @@ body.lock {
   right: 30px;
   z-index: 14;
   opacity: 0;
+}
+
+.anim-show-top {
+  transform: translate(0px, 20%);
+  opacity: 0;
+  transition: all 0.8s ease 1s;
+}
+
+.anim-show-left {
+  transform: translate(-120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.anim-show-top._active,
+._active .anim-show-top {
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+
+.anim-show-left._active,
+._active .anim-show-left {
+  opacity: 1;
+  transform: translate(0px, 0px);
 }
 
 .show {

@@ -5,7 +5,6 @@
 @import "_main-block";
 @import "_services";
 @import "_price";
-@import "_pagePrice";
 @import "_stats";
 @import "_rules";
 @import "_photo";
@@ -13,6 +12,10 @@
 @import "_footer";
 @import "_form";
 @import "_popup";
+@import "_login-account";
+@import "_reg-account";
+@import "_pagePrice";
+@import "_pageAccount";
 
 // Fonts stuff
 $font-family: "Play";
@@ -44,6 +47,31 @@ body.lock {
 	z-index: 14;
     opacity: 0;
 }
+
+.anim-show-top {
+    transform: translate(0px, 20%);
+    opacity: 0;
+    transition: all 0.8s ease 1s;
+}
+
+.anim-show-left {
+    transform: translate(-120%, 0px);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.anim-show-top._active,
+._active .anim-show-top {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+.anim-show-left._active,
+._active .anim-show-left {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
 .show {
     opacity: 1;
     transition: 1s;
@@ -98,6 +126,14 @@ body.lock {
 }
 .page {
     &__location {
+    }
+}
+.page {
+    &__login-account {
+    }
+}
+.page {
+    &__user-account {
     }
 }
 

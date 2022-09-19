@@ -155,4 +155,8 @@
             margin-top: 20px;
         }
     }
+    .tabs__btn:not(.tabs__btn-active):hover,
+    .tabs__btn:not(.tabs__btn-active):focus {
+        box-shadow: none;
+    }
 }

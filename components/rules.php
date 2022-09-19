@@ -5,7 +5,7 @@
         </div>
         <div class="rules__body">
             <div class="rules__content">
-                <ul class="rules__items">
+                <ul class="rules__items anim-items anim-no-hide">
                     <li class="rules__item">Посещение с 22:00 строго с 18 лет</li>
                     <li class="rules__item">Нельзя приходить с алкоголными напитками</li>
                     <li class="rules__item">Нельзя приходить со своей едой и напитками (можно приобрести внутри клуба)</li>

@@ -13,14 +13,14 @@
     <div class="wrapper">
         <header class="header lock-padding">
             <div class="header__container container">
-                <a href='index.php' class="header__logo"><span>/</span>Play</a>
+                <a href="index.php" class="header__logo"><span>/</span>Play</a>
                 <div class="header__menu menu">
                     <div class="menu__icon">
                         <span></span>
                     </div>
                     <nav class="menu__body menu">
                         <ul class="menu__list">
-                            <li><a href='index.php' class="menu__link">Home</a></li>
+                            <li><a href="index.php" class="menu__link">Home</a></li>
                         </ul>
                     </nav>
                 </div>

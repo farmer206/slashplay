@@ -13,20 +13,33 @@
     <div class="wrapper">
         <header class="header lock-padding">
             <div class="header__container container">
-                <a href='index.php' class="header__logo"><span>/</span>Play</a>
+                <a href="index.php" class="header__logo"><span>/</span>Play</a>
                 <div class="header__menu menu">
                     <div class="menu__icon">
                         <span></span>
                     </div>
                     <nav class="menu__body menu">
                         <ul class="menu__list">
-                            <li><a data-goto=".price" href="#" class="menu__link">Прайс</a></li>
-                            <li><a data-goto=".photo" href="#" class="menu__link">Фото</a></li>
-                            <li><a data-goto=".stats" href="#" class="menu__link">Статы</a></li>
-                            <li><a data-goto=".rules" href="#" class="menu__link">Правила</a></li>
-                            <li><a data-goto=".location" href="#" class="menu__link">Контакты</a></li>
+                            <li><a href="index.php" class="menu__link">Home</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
+
+        <section class="page__user-account user-account">
+            <div class="user-account__container container">
+                <div class="user-account__header header-block">
+                    <h2 class="heder-block__titile">Мой аккаунт</h2>
+                    <div class="heder-block__sub-titile">
+                    </div>
+                </div>
+                <div class="user-account__body">
+
+                </div>
+            </div>
+        </section>
+
+        <?php
+        require('components/footer.php');
+        ?>
