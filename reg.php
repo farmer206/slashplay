@@ -38,14 +38,14 @@ session_start();
                 </div>
                 <div class="reg-account__body">
                     <div class="reg-account__content">
-                        <form action="save_user.php" method="post" id="form" class="form-block__body">
+                        <form action="/save_user.php" method="POST" id="form" class="form-block__body">
                             <div class="form-block__item">
                                 <label for="formEmail" class="form-block__label">Email</label>
-                                <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="formEmail" type="email" name="email" class="form-block__input" value="<?= $_SESSION['email'] ?>" require />
+                                <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="formEmail" type="email" name="email" class="form-block__input" require />
                             </div>
                             <div class="form-block__item">
                                 <label for="formPass" class="form-block__label">Пароль</label>
-                                <input id="formPass" type="password" name="password" class="form-block__input" value="<?= $_SESSION['password'] ?>" require />
+                                <input id="formPass" type="password" name="password" class="form-block__input" require />
                             </div>
                             <div class="form-block__item">
                                 <div class="checkbox">

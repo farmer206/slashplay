@@ -24,7 +24,7 @@
                                 <li class="tabs__list-item"><span>(SSD)</span> Твердотелые диски</li>
                             </ul>
                             <div class="tabs__text">
-                                Наши специалисты каждый день следят за качеством оборудования. Своевременно обновляют программы. Пидорят жесткий диск от всякого шлака, чтобы каждый клиент пользовался игровым компьютером с мксимальным комфортом.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde error nulla saepe similique eaque laudantium fugiat itaque nostrum consequuntur temporibus expedita non totam aliquam sint culpa maxime, quod numquam! Commodi.
                             </div>
                         </div>
                     </div>

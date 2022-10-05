@@ -17,6 +17,11 @@ if (isset($_POST['password'])) {
     }
 }
 
+//если пользователь не ввел логин или пароль, то выдаем ошибку и останавливаем скрипт
+if (empty($email) or empty($password)) {
+    exit("Вы ввели не всю информацию, вернитесь назад и заполните все поля!");
+}
+
 $email = stripslashes($email);
 $password = stripslashes($password);
 
@@ -29,22 +34,24 @@ $email = trim($email);
 $password = trim($password);
 
 $password = md5($password);
+
 // подключаемся к базе
 
 // файл bd.php должен быть в той же папке, что и все остальные, если это не так, то просто измените путь
 include("bd.php");
 
 // проверка на существование пользователя с таким же e-mail
-$check_user_email = mysqli_query($db, "SELECT `id` FROM `users` WHERE `email` = '$email'");
-$result = mysqli_fetch_array($check_user_email);
-if (!empty($result['id'])) {
-    exit("Извините, введённый вами логин уже зарегистрирован. Введите другой логин.");
+$result = mysqli_query($db, "SELECT `id` FROM `users` WHERE `email` = '$email'");
+$myrow = mysqli_fetch_array($result);
+if (!empty($myrow['id'])) {
+    exit("Извините, введённый вами e-mail уже зарегистрирован. Введите другой.");
 }
 // если такого нет, то сохраняем данные
-$save_result = mysqli_query($db, "INSERT INTO `users` (`email`, `password`) VALUES ('$email','$password')");
+$result2 = mysqli_query($db, "INSERT INTO `users` (`email`, `password`) VALUES ('$email', '$password')");
+
 // Проверяем, есть ли ошибки
-if ($save_result == 'TRUE') {
-    header('Location: /pages/pageAccount.php');
+if ($result2) {
+    echo "Вы успешно зареганы";
 } else {
-    $_SESSION['message'] = 'Неверный логин или пароль';
+    echo "Ошибка! Вы не зарегистрированы";
 }

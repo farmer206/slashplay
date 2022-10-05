@@ -41,11 +41,11 @@ session_start();
                         <form action="testreg.php" method="post" id="form" class="form-block__body">
                             <div class="form-block__item">
                                 <label for="formEmail" class="form-block__label">Email</label>
-                                <input pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,4}" title="must be a valid email address" id="formEmail" type="email" name="email" class="form-block__input" require />
+                                <input pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,4}" title="must be a valid email address" id="formEmail" type="email" name="email" class="form-block__input" value="<?= $_SESSION['email'] ?>" require />
                             </div>
                             <div class="form-block__item">
                                 <label for="formPass" class="form-block__label">Пароль</label>
-                                <input title="Must be at least 8 characters" pattern="[a-zA-Z0-9]{8,}" minlength="8" maxlength="32" id="formPass" type="password" name="password" class="form-block__input" require />
+                                <input title="Must be at least 8 characters" pattern="[a-zA-Z0-9]{8,}" minlength="8" maxlength="32" id="formPass" type="password" name="password" class="form-block__input" value="<?= $_SESSION['password'] ?>" require />
                                 <p class="input-hint">Must be at 8 characters</p>
                             </div>
                             <div class="form-block__item">
