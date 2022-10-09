@@ -37,6 +37,7 @@
 require('popup.php');
 ?>
 </div>
+<script src="scripts/preloader.js"></script>
 <script src="scripts/isMobile.js"></script>
 <script src="scripts/animItems.js"></script>
 <script src="scripts/menuIcon.js"></script>

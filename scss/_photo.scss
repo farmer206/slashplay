@@ -22,6 +22,7 @@
         align-items: center;
         max-height: 420px;
         max-width: 60%;
+        background: url('/img/icons/placeholder.svg') center / 50px no-repeat;
     }
     &__info {
         max-width: 40%;
@@ -46,6 +47,10 @@
         line-height: 2;
         text-align: left;
     }
+}
+
+.slider__image span {
+    
 }
 
 .slider_disable-transition {

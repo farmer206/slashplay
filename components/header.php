@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +13,10 @@
 </head>
 
 <body>
+    <div id='preload' class="preloader">
+        <div class="preloader__ring"></div>
+        <span class="preloader__text">loading...</span>
+    </div>
     <div class="wrapper">
         <header class="header lock-padding">
             <div class="header__container container">

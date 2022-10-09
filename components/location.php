@@ -2,7 +2,7 @@
     <div class="location__container container">
         <div class="location__body">
             <div class="location__video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/-hpqazdTOP4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-hpqazdTOP4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen></iframe>
             </div>
             <div class="location__content">
                 <h2 class="location__title">Мы ждем вас!</h2>

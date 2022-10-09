@@ -1,0 +1,14 @@
+.account {
+    padding: 104px 0px 40px 0;
+    &__header {
+        margin: 0px 0px 40px 0px;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0px -15px;
+    }
+}

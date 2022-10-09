@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
 @import "null.scss";
 @import "_header";
@@ -12,13 +13,33 @@
 @import "_footer";
 @import "_form";
 @import "_popup";
-@import "_login-account";
-@import "_reg-account";
-@import "_pagePrice";
-@import "_pageAccount";
+@import "_login";
+@import "_register";
+@import "_page-price";
+@import "_page-account";
 
-// Fonts stuff
-$font-family: "Play";
+/* ---Preloader animation start--- */
+@keyframes ring {
+    0% {
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #e65c00;
+    }
+    50% {
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px #18b201;
+    }
+    100% {
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px #0456c8;
+    }
+}
+
+@keyframes text {
+    50% {
+        color: black;
+    }
+}
+/* ---Preloader animation end--- */
 
 html {
     scroll-behavior: smooth;
@@ -32,6 +53,67 @@ body {
 body.lock {
     overflow: hidden;
 }
+
+// Fonts stuff
+$font-family: "Play";
+
+/* ---Preloader start--- */
+.preloader {
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: black;
+    overflow: hidden;
+    min-height: 100vh;
+    &__ring {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        animation: ring 2s linear infinite;
+    }
+}
+
+.ring::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+}
+
+span.preloader__text {
+    color: #737373;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 200px;
+    animation: text 3s ease-in-out infinite;
+}
+
+.loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+}
+
+.loaded .preloader {
+    display: none;
+}
+/* ---Preloader end--- */
 
 .wrapper {
     display: flex;
@@ -97,7 +179,7 @@ body.lock {
     object-fit: cover;
 }
 
-/* ---PAGE--- */
+/* ---PAGES--- */
 .page {
     flex: 1 1 auto;
 }
@@ -129,11 +211,11 @@ body.lock {
     }
 }
 .page {
-    &__login-account {
+    &__login {
     }
 }
 .page {
-    &__user-account {
+    &__account {
     }
 }
 

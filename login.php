@@ -1,5 +1,9 @@
 <?php
 session_start();
+
+if (isset($_SESSION['id'])) {
+    header('Location: page_account.php');
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,6 +17,10 @@ session_start();
 </head>
 
 <body>
+    <div id='preload' class="preloader">
+        <div class="preloader__ring"></div>
+        <span class="preloader__text">loading...</span>
+    </div>
     <div class="wrapper">
         <header class="header lock-padding">
             <div class="header__container container">
@@ -29,16 +37,16 @@ session_start();
                 </div>
             </div>
         </header>
-        <section class="page__login-account login-account">
-            <div class="login-account__container container">
-                <div class="login-account__header header-block">
+        <section class="page__login login">
+            <div class="login__container container">
+                <div class="login__header header-block">
                     <h2 class="heder-block__titile">Войти в аккаунт</h2>
                     <div class="heder-block__sub-titile">
                     </div>
                 </div>
-                <div class="login-account__body">
-                    <div class="login-account__content">
-                        <form action="testreg.php" method="post" id="form" class="form-block__body">
+                <div class="login__body">
+                    <div class="login__content">
+                        <form action="signup.php" method="post" id="form" class="form-block__body">
                             <div class="form-block__item">
                                 <label for="formEmail" class="form-block__label">Email</label>
                                 <input pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,4}" title="must be a valid email address" id="formEmail" type="email" name="email" class="form-block__input" value="<?= $_SESSION['email'] ?>" require />
@@ -57,10 +65,18 @@ session_start();
                                 </div>
                             </div>
                             <button type="submit" class="form-block__button">Sign in</button>
+                            <div class="login__text">
+                                <a href="register.php">Register</a>
+                            </div>
+
+                            <?php
+                            if ($_SESSION['message']) {
+                                echo '<p class="login__message">' . $_SESSION['message'] . '</p>';
+                            }
+                            unset($_SESSION['message']);
+                            ?>
+
                         </form>
-                        <div class="login-account__text">
-                            <a href="/reg.php">Register</a>
-                        </div>
                     </div>
                 </div>
             </div>

@@ -8,11 +8,17 @@
                 </div>
                 <div class="main-block__buttons anim-items anim-no-hide">
                     <a href="#popup" class="main-block__button main-block__button-start popup-link">START</a>
-                    <a href="/login.php" class="main-block__button main-block__button-more">Sign in</a>
+                    <?php
+                    if (!isset($_SESSION['id'])) {
+                        echo '<a href="/login.php" class="main-block__button main-block__button-more">Sign in</a>';
+                    } else {
+                        echo '<a href="/logout.php" class="main-block__button main-block__button-more">Sign out</a>';
+                    }
+                    ?>
                 </div>
             </div>
         </div>
-        <div class="main-block__image _ibg">
+        <!-- <div class="main-block__image _ibg">
             <img src="img/main/main-block_1.jpg" alt="Сетка в пространстве">
-        </div>
+        </div> -->
     </section>

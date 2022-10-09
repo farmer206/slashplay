@@ -7,7 +7,7 @@
                         <div class="slider__items">
                             <div class="slider__item">
                                 <div class="slider__image">
-                                    <img loading="lazy" src="/img/photo/client_1.jpg" alt="Турнир">
+                                    <img src="/img/photo/client_1.jpg" alt="Турнир" loading="lazy">
                                 </div>
                                 <div class="slider__info">
                                     <div class="slider__header header-block">
@@ -19,7 +19,7 @@
                             </div>
                             <div class="slider__item">
                                 <div class="slider__image">
-                                    <img loading="lazy" src="/img/photo/client_2.jpg" alt="Победители">
+                                    <img src="/img/photo/client_2.jpg" alt="Победители" loading="lazy">
                                 </div>
                                 <div class="slider__info">
                                     <div class="slider__header header-block">
@@ -31,7 +31,7 @@
                             </div>
                             <div class="slider__item">
                                 <div class="slider__image">
-                                    <img loading="lazy" src="/img/photo/client_3.jpg" alt="Посетители">
+                                    <img src="/img/photo/client_3.jpg" alt="Посетители" loading="lazy">
                                 </div>
                                 <div class="slider__info">
                                     <div class="slider__header header-block">
@@ -43,7 +43,7 @@
                             </div>
                             <div class="slider__item">
                                 <div class="slider__image">
-                                    <img loading="lazy" src="/img/photo/client_4.jpg" alt="Клиент">
+                                    <img src="/img/photo/client_4.jpg" alt="Клиент" loading="lazy">
                                 </div>
                                 <div class="slider__info">
                                     <div class="slider__header header-block">
