@@ -147,6 +147,28 @@ h1, h2, h3, h4, h5, h6 {
   color: #409f01;
 }
 
+.link-button {
+  border: 1px solid rgba(70, 174, 0, 0.5);
+  padding: 5px 15px;
+  border-radius: 4px;
+  background-color: rgba(80, 144, 12, 0.1);
+  transition: all 0.3s ease 0s;
+}
+
+.link-button:hover {
+  box-shadow: 0 4px 6px rgba(113, 255, 88, 0.25);
+}
+
+.link-account {
+  color: #e1cb30;
+  text-transform: none;
+  font-size: 18px;
+}
+
+.link-account:hover {
+  color: #b4a426;
+}
+
 body._touch .menu__link {
   flex: 1 1 auto;
 }
@@ -818,7 +840,7 @@ body._touch .menu__link {
   position: relative;
 }
 .rules__item:nth-child(1):before {
-  content: url(/img/icons/adult.svg);
+  content: url(/img/icons/rules_icons/adult.svg);
   position: absolute;
   top: 18px;
   left: 0;
@@ -826,7 +848,7 @@ body._touch .menu__link {
   height: 20px;
 }
 .rules__item:nth-child(2):before {
-  content: url(/img/icons/forbidden.svg);
+  content: url(/img/icons/rules_icons/forbidden.svg);
   position: absolute;
   top: 18px;
   left: 0;
@@ -834,7 +856,7 @@ body._touch .menu__link {
   height: 20px;
 }
 .rules__item:nth-child(3):before {
-  content: url(/img/icons/forbidden.svg);
+  content: url(/img/icons/rules_icons/forbidden.svg);
   position: absolute;
   top: 18px;
   left: 0;
@@ -842,7 +864,7 @@ body._touch .menu__link {
   height: 20px;
 }
 .rules__item:nth-child(4):before {
-  content: url(/img/icons/forbidden.svg);
+  content: url(/img/icons/rules_icons/forbidden.svg);
   position: absolute;
   top: 18px;
   left: 0;
@@ -850,7 +872,7 @@ body._touch .menu__link {
   height: 20px;
 }
 .rules__item:nth-child(5):before {
-  content: url(/img/icons/check.svg);
+  content: url(/img/icons/rules_icons/check.svg);
   position: absolute;
   top: 18px;
   left: 0;
@@ -917,7 +939,6 @@ body._touch .menu__link {
   align-items: center;
   max-height: 420px;
   max-width: 60%;
-  background: url("/img/icons/placeholder.svg") center/50px no-repeat;
 }
 .slider__info {
   max-width: 40%;
@@ -1367,7 +1388,7 @@ body._touch .menu__link {
 }
 .checkbox__label::after {
   transition: transform all 0.5s ease 0s;
-  content: url(/img/popup/checkbox-check.svg);
+  content: url(/img/icons/popup/checkbox-check.svg);
   width: 16px;
   height: 16px;
   position: absolute;
@@ -1467,34 +1488,6 @@ body._touch .menu__link {
   opacity: 1;
 }
 
-.login {
-  padding: 114px 0px 20px 0px;
-}
-.login__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 10px;
-}
-.login__content {
-  background-color: black;
-  max-width: 350px;
-  padding: 30px;
-  transition: all 0.8s ease 0s;
-  border: 1px solid rgba(70, 174, 0, 0.5);
-}
-.login__text {
-  text-align: center;
-  font-size: 16px;
-  margin: 1em 0px 0px 0px;
-  color: #46AE00;
-}
-.login__message {
-  font-size: 16px;
-  margin: 1em 0px 0px 0px;
-  color: #eb4036;
-}
-
 .register {
   padding: 114px 0px 20px 0px;
 }
@@ -1513,17 +1506,51 @@ body._touch .menu__link {
 }
 .register__text {
   text-align: center;
-  font-size: 16px;
   margin: 1em 0px 0px 0px;
+}
+.register__text a {
+  font-size: 16px;
   color: #46AE00;
 }
 .register__message {
   font-size: 16px;
   margin: 1em 0px 0px 0px;
   color: #eb4036;
+  text-align: center;
 }
 
-/* ---page_Price--- */
+.login {
+  padding: 114px 0px 20px 0px;
+}
+.login__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+.login__content {
+  background-color: black;
+  max-width: 350px;
+  padding: 30px;
+  transition: all 0.8s ease 0s;
+  border: 1px solid rgba(70, 174, 0, 0.5);
+}
+.login__text {
+  margin: 1em 0px 0px 0px;
+  text-align: center;
+}
+.login__text a {
+  font-size: 16px;
+  color: #46AE00;
+}
+.login__message {
+  font-size: 14px;
+  margin: 1em 0px 0px 0px;
+  color: #eb4036;
+  text-align: center;
+}
+
+/* ---page_loyalty--- */
 .loyalty {
   padding: 104px 0px 40px 0;
 }
@@ -1558,29 +1585,50 @@ body._touch .menu__link {
   font-weight: 400;
   color: #e1cb30;
   font-family: "Play";
+  text-align: center;
 }
 .loyalty-table__info {
   text-align: left;
-  padding-left: 30px;
+  padding: 0px 30px;
 }
 
-.loyalty-table th:first-child {
+.loyalty-table__title-standart {
   text-align: left;
-  padding-left: 30px;
+  padding: 0px 30px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #e1cb30;
+  font-family: "Play";
 }
 
 .loyalty__column:not(:last-child) {
   margin-bottom: 40px;
 }
 
-/* ---При уменьшении Page Price--- */
-.account {
+/* ---При уменьшении page_loyalty--- */
+@media (max-width: 767px) {
+  .loyalty-table__info {
+    padding: 0px 15px;
+    font-size: 14px;
+  }
+  .loyalty-table__title-standart {
+    padding: 0px 15px;
+    font-size: 16px;
+  }
+  .loyalty-table__title {
+    font-size: 16px;
+  }
+  .loyalty-table__cell {
+    font-size: 14px;
+  }
+}
+.profile {
   padding: 104px 0px 40px 0;
 }
-.account__header {
+.profile__header {
   margin: 0px 0px 40px 0px;
 }
-.account__body {
+.profile__body {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1633,6 +1681,7 @@ html {
 }
 
 body {
+  overflow-anchor: none;
   background-color: black;
   color: #b8b6b4;
 }
@@ -1657,7 +1706,6 @@ body.lock {
   text-align: center;
   background: black;
   overflow: hidden;
-  min-height: 100vh;
 }
 .preloader__ring {
   position: absolute;
@@ -1684,8 +1732,6 @@ span.preloader__text {
   font-family: "JetBrains Mono", monospace;
   font-weight: 400;
   font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
   line-height: 200px;
   -webkit-animation: text 3s ease-in-out infinite;
           animation: text 3s ease-in-out infinite;
@@ -1719,7 +1765,7 @@ span.preloader__text {
 .anim-show-top {
   transform: translate(0px, 20%);
   opacity: 0;
-  transition: all 0.8s ease 1s;
+  transition: all 0.6s ease 0.6s;
 }
 
 .anim-show-left {

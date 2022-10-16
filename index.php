@@ -1,5 +1,5 @@
 <?php
-require_once('connect.php');
+require_once('database/connect.php');
 require('components/header.php');
 require('components/main.php');
 require('components/services.php');

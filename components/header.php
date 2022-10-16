@@ -32,6 +32,13 @@ session_start();
                             <li><a data-goto=".stats" href="#" class="menu__link">Статы</a></li>
                             <li><a data-goto=".rules" href="#" class="menu__link">Правила</a></li>
                             <li><a data-goto=".location" href="#" class="menu__link">Контакты</a></li>
+                            <?php
+                            if (!isset($_SESSION['id'])) {
+                                echo '<li><a href="/pages/page_login.php" class="menu__link link-account link-button">Sign in</a></li>';
+                            } else {
+                                echo '<li><a href="/pages/page_profile.php" class="menu__link link-account link-button">Profile</a></li>';
+                            }
+                            ?>
                         </ul>
                     </nav>
                 </div>

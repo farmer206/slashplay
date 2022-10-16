@@ -10,7 +10,7 @@
                 <div class="tabs__nav">
                     <button class="tabs__btn tabs__btn-active">System</button>
                     <button class="tabs__btn">Периферия</button>
-                    <button class="tabs__btn">VIP зал</button>
+                    <button class="tabs__btn">VIP ПК</button>
                 </div>
                 <div class="tabs__body">
                     <div class="tabs__pane tabs__pane-show">
@@ -53,7 +53,7 @@
                             <li class="tabs__list-item"><span>Крела:</span> AOS 24` & DX-RACER</li>
                         </ul>
                         <div class="tabs__text">
-                            Всё новое и свежее. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat perferendis rerum recusandae ut quasi quidem ducimus exercitationem id, odit architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, fugiat.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat perferendis rerum recusandae ut quasi quidem ducimus exercitationem id, odit architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, fugiat.
                         </div>
                     </div>
                 </div>

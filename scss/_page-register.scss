@@ -1,4 +1,4 @@
-.login {
+.register {
     padding: 114px 0px 20px 0px;
     &__body {
         display: flex;
@@ -17,14 +17,16 @@
 
     &__text {
         text-align: center;
-        font-size: 16px;
         margin: 1em 0px 0px 0px;
-        //text-transform: uppercase;
+    }
+    &__text a {
+        font-size: 16px;
         color: #46AE00;
     }
     &__message {
         font-size: 16px;
         margin: 1em 0px 0px 0px;
         color: #eb4036;
+        text-align: center;
     }
 }

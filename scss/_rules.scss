@@ -15,7 +15,7 @@
         position: relative;
     }
     &__item:nth-child(1):before {
-        content: url(/img/icons/adult.svg);
+        content: url(/img/icons/rules_icons/adult.svg);
         position: absolute;
         top: 18px;
         left: 0;
@@ -23,7 +23,7 @@
         height: 20px;
     }
     &__item:nth-child(2):before {
-        content: url(/img/icons/forbidden.svg);
+        content: url(/img/icons/rules_icons/forbidden.svg);
         position: absolute;
         top: 18px;
         left: 0;
@@ -31,7 +31,7 @@
         height: 20px;
     }
     &__item:nth-child(3):before {
-        content: url(/img/icons/forbidden.svg);
+        content: url(/img/icons/rules_icons/forbidden.svg);
         position: absolute;
         top: 18px;
         left: 0;
@@ -39,7 +39,7 @@
         height: 20px;
     }
     &__item:nth-child(4):before {
-        content: url(/img/icons/forbidden.svg);
+        content: url(/img/icons/rules_icons/forbidden.svg);
         position: absolute;
         top: 18px;
         left: 0;
@@ -47,7 +47,7 @@
         height: 20px;
     }
     &__item:nth-child(5):before {
-        content: url(/img/icons/check.svg);
+        content: url(/img/icons/rules_icons/check.svg);
         position: absolute;
         top: 18px;
         left: 0;

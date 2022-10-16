@@ -10,7 +10,7 @@
                 <div class="location__items">
                     <div class="location__item item-location">
                         <div class="item-location__icon">
-                            <img loading="lazy" src="img/location/location.svg" alt="Локация">
+                            <img src="img/icons/location/location.svg" alt="Локация">
                         </div>
                         <div class="item-location__body">
                             <div class="item-location__title">Адрес: </div>
@@ -21,7 +21,7 @@
                     </div>
                     <div class="location__item item-location">
                         <div class="item-location__icon">
-                            <img loading="lazy" src="img/location/phone.svg" alt="Телефон">
+                            <img src="img/icons/location/phone.svg" alt="Телефон">
                         </div>
                         <div class="item-location__body">
                             <div class="item-location__title">Телефон: </div>
@@ -32,7 +32,7 @@
                     </div>
                     <div class="location__item item-location">
                         <div class="item-location__icon">
-                            <img loading="lazy" src="img/location/24-hours.svg" alt="Круглосуточно">
+                            <img src="img/icons/location/24-hours.svg" alt="Круглосуточно">
                         </div>
                         <div class="item-location__body">
                             <div class="item-location__title">Часы работы: </div>

@@ -20,7 +20,7 @@ if (isset($_POST['password'])) {
 // если пользователь не ввел e-mail или пароль
 if (empty($email) or empty($password)) {
     $_SESSION['message'] = 'Не введён e-mail или пароль';
-    header('Location: register.php');
+    header('Location: /pages/page_register.php');
     exit;
 }
 
@@ -36,28 +36,28 @@ $email = trim($email);
 $password = trim($password);
 
 // Хеширование
-$password = md5($password);
+$hash = password_hash($password, PASSWORD_BCRYPT);
 
 // подключаемся к базе
 
-// файл connect.php должен быть в той же папке, что и все остальные, если это не так, то просто измените путь
-include("connect.php");
+// файл connect.php должен быть в той же папке, что и все остальные
+include("../database/connect.php");
 
 // проверка на существование пользователя с таким же e-mail
 $result = mysqli_query($connect, "SELECT `id` FROM `users` WHERE `email` = '$email'");
 $myrow = mysqli_fetch_array($result);
 if (!empty($myrow['id'])) {
     $_SESSION['message'] = 'Извините, введённый вами e-mail уже зарегистрирован. Введите другой.';
-    header('Location: register.php');
+    header('Location: /pages/page_register.php');
 }
 // если такого нет, то сохраняем данные
-$result2 = mysqli_query($connect, "INSERT INTO `users` (`email`, `password`) VALUES ('$email', '$password')");
+$result2 = mysqli_query($connect, "INSERT INTO `users` (`email`, `password`) VALUES ('$email', '$hash')");
 
 // Проверяем, есть ли ошибки
 if ($result2) {
     $_SESSION['message'] = "Отлично! Регистрация прошла успешно. Пожалуйста, войдите в аккаунт.";
-    header('Location: login.php');
+    header('Location: ../pages/page_login.php');
 } else {
     $_SESSION['message'] = "Ошибка! Вы не зарегистрированы";
-    header('Location: register.php');
+    header('Location: ../verify_user.php');
 }

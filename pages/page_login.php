@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_SESSION['id'])) {
-    header('Location: page_account.php');
+    header('Location: /pages/page_profile.php');
 }
 ?>
 <!DOCTYPE html>
@@ -11,8 +11,8 @@ if (isset($_SESSION['id'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link rel="icon" href="img/icons/favicon.ico">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="/img/icons/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Play</title>
 </head>
 
@@ -24,14 +24,14 @@ if (isset($_SESSION['id'])) {
     <div class="wrapper">
         <header class="header lock-padding">
             <div class="header__container container">
-                <a href="index.php" class="header__logo"><span>/</span>Play</a>
+                <a href="/index.php" class="header__logo"><span>/</span>Play</a>
                 <div class="header__menu menu">
                     <div class="menu__icon">
                         <span></span>
                     </div>
                     <nav class="menu__body menu">
                         <ul class="menu__list">
-                            <li><a href="index.php" class="menu__link">Home</a></li>
+                            <li><a href="/index.php" class="menu__link">Home</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -46,9 +46,9 @@ if (isset($_SESSION['id'])) {
                 </div>
                 <div class="login__body">
                     <div class="login__content">
-                        <form action="signup.php" method="post" id="form" class="form-block__body">
+                        <form action="/validation-form/verify_user.php" method="post" id="form" class="form-block__body">
                             <div class="form-block__item">
-                                <label for="formEmail" class="form-block__label">Email</label>
+                                <label for="formEmail" class="form-block__label">E-mail</label>
                                 <input pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,4}" title="must be a valid email address" id="formEmail" type="email" name="email" class="form-block__input" value="<?= $_SESSION['email'] ?>" require />
                             </div>
                             <div class="form-block__item">
@@ -66,7 +66,7 @@ if (isset($_SESSION['id'])) {
                             </div>
                             <button type="submit" class="form-block__button">Sign in</button>
                             <div class="login__text">
-                                <a href="register.php">Register</a>
+                                <a href="page_register.php">Here you can register</a>
                             </div>
 
                             <?php
@@ -81,7 +81,6 @@ if (isset($_SESSION['id'])) {
                 </div>
             </div>
         </section>
-
         <?php
-        require('components/footer.php');
+        require('../components/simple_footer.php');
         ?>

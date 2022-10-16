@@ -13,10 +13,10 @@
 @import "_footer";
 @import "_form";
 @import "_popup";
-@import "_login";
-@import "_register";
-@import "_page-price";
-@import "_page-account";
+@import "_page-register";
+@import "_page-login";
+@import "_page-loyalty";
+@import "_page-profile";
 
 /* ---Preloader animation start--- */
 @keyframes ring {
@@ -46,6 +46,7 @@ html {
 }
 
 body {
+    overflow-anchor: none;
     background-color: black;
     color: #b8b6b4;
 }
@@ -73,7 +74,7 @@ $font-family: "Play";
     text-align: center;
     background: black;
     overflow: hidden;
-    min-height: 100vh;
+    // min-height: 100vh;
     &__ring {
         position: absolute;
         width: 200px;
@@ -99,8 +100,8 @@ span.preloader__text {
     font-family: 'JetBrains Mono', monospace;
     font-weight: 400;
     font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    // text-transform: uppercase;
+    // letter-spacing: 1px;
     line-height: 200px;
     animation: text 3s ease-in-out infinite;
 }
@@ -133,7 +134,7 @@ span.preloader__text {
 .anim-show-top {
     transform: translate(0px, 20%);
     opacity: 0;
-    transition: all 0.8s ease 1s;
+    transition: all 0.6s ease 0.6s;
 }
 
 .anim-show-left {
@@ -216,6 +217,10 @@ span.preloader__text {
 }
 .page {
     &__account {
+    }
+}
+.page {
+    &__loyalty{
     }
 }
 
