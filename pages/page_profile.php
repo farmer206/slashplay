@@ -27,15 +27,18 @@ if (!isset($_SESSION['id'])) {
             <div class="header__container container">
                 <a href="/index.php" class="header__logo"><span>/</span>Play</a>
                 <div class="header__menu menu">
-                    <div class="menu__icon">
-                        <span></span>
-                    </div>
-                    <nav class="menu__body menu">
+                    <nav class="menu__body">
                         <ul class="menu__list">
                             <li><a href="/index.php" class="menu__link">Home</a></li>
-                            <li><a href="/validation-form/logout.php" class="menu__link link-account link-button">Sign out</a></li>
+                            <li></li>
                         </ul>
                     </nav>
+                    <div class="header__button">
+                        <a href="/validation-form/logout.php" class="button button-logout"><span></span></a>
+                        <a href="#" class="icon-menu">
+                            <span></span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </header>

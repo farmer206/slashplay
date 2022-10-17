@@ -1,12 +1,12 @@
 "use strict";
 
 // Меню бургер
-const menuIcon = document.querySelector('.menu__icon');
+const iconMenu = document.querySelector('.icon-menu');
 const menuBody = document.querySelector('.menu__body');
-if (menuIcon) {
-    menuIcon.addEventListener("click", function(e) {
+if (iconMenu) {
+    iconMenu.addEventListener("click", function(e) {
         document.body.classList.toggle('_lock');
-        menuIcon.classList.toggle('_active');
+        iconMenu.classList.toggle('_active');
         menuBody.classList.toggle('_active');
     });
 }
@@ -24,9 +24,9 @@ if (menuLinks.length > 0) {
             const gotoBlock = document.querySelector(menuLink.dataset.goto);
             const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY;
         
-            if (menuIcon.classList.contains('_active')) {
+            if (iconMenu.classList.contains('_active')) {
                 document.body.classList.remove('_lock');
-                menuIcon.classList.remove('_active');
+                iconMenu.classList.remove('_active');
                 menuBody.classList.remove('_active');
             }
 

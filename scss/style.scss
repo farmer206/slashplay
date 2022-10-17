@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
 @import "null.scss";
 @import "_header";
@@ -18,7 +18,39 @@
 @import "_page-loyalty";
 @import "_page-profile";
 
-/* ---Preloader animation start--- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-anchor: none;
+    background-color: black;
+    color: #b8b6b4;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1076px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    box-sizing: content-box;
+}
+
+// Fonts stuff
+$font-family: "Play";
+
+
+/* ---Preloader start--- */
 @keyframes ring {
     0% {
         transform: rotate(0deg);
@@ -39,26 +71,7 @@
         color: black;
     }
 }
-/* ---Preloader animation end--- */
 
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    overflow-anchor: none;
-    background-color: black;
-    color: #b8b6b4;
-}
-
-body.lock {
-    overflow: hidden;
-}
-
-// Fonts stuff
-$font-family: "Play";
-
-/* ---Preloader start--- */
 .preloader {
     position: fixed;
     z-index: 1001;
@@ -97,11 +110,10 @@ $font-family: "Play";
 
 span.preloader__text {
     color: #737373;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 20px;
-    // text-transform: uppercase;
-    // letter-spacing: 1px;
+    letter-spacing: 1px;
     line-height: 200px;
     animation: text 3s ease-in-out infinite;
 }
@@ -116,12 +128,7 @@ span.preloader__text {
 }
 /* ---Preloader end--- */
 
-.wrapper {
-    display: flex;
-    min-height: 100%;
-    overflow: hidden;
-    flex-direction: column;
-}
+
 
 .up-button {
     position: fixed;
@@ -158,13 +165,6 @@ span.preloader__text {
 .show {
     opacity: 1;
     transition: 1s;
-}
-
-.container {
-    max-width: 1046px;
-    margin: 0px auto;
-    padding: 0px 15px;
-    box-sizing: content-box;
 }
 
 .ibg {
@@ -216,7 +216,7 @@ span.preloader__text {
     }
 }
 .page {
-    &__account {
+    &__profile {
     }
 }
 .page {
@@ -251,33 +251,24 @@ span.preloader__text {
     }
 }
 
-@media (max-width: 1046px) {
-    .container{
+/* ---PC--- */
+@media (max-width: 1076px) {
+    .container {
         max-width: 970px;
     }
 }
-
-@media (max-width: 992px) {
-    .page {
-        &__services {
-            margin: 0px 0px 0px 0px;
-        }
-    }
+/* ---TABLET--- */
+@media (max-width: 991.98px) {
     .container {
         max-width: 750px;
     }
 }
-
-@media (max-width: 767px) {
+/* ---MOBILE--- */
+@media (max-width: 767.98px) {
     .container {
         max-width: none;
     }
 }
-
-@media (max-width: 726px) {
-    .heder-block {
-        &__titile {
-            font-size: 18px;
-        }
-    }
+/* ---MOBILE SMAL--- */
+@media (max-width: 479.98px) {
 }

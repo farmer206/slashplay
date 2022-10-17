@@ -23,9 +23,7 @@
       background-color: transparent;
       &__container {
             display: flex;
-            padding: 0px 15px;
             align-items: center;
-            justify-content: space-between;
             min-height: 104px;
       }
 	&__logo {
@@ -33,22 +31,32 @@
             font-family: "Press Start 2P";
             font-weight: 400;
             color: #66ff00;
+            position: relative;
+            z-index: 5;
 	}
       &__logo span {
             animation: anime infinite 4s linear;
       }
+      &__menu {
+            flex: 1 1 auto;
+      }
+      &__button {
+            flex: 0 0 200px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: relative;
+      }
 }
 
-.menu {   
-      &__icon {
-            display: none;
-      }
-      &__list  > li {
-            position: relative;
-            margin: 0px 0px 0px 20px;
+.menu {
+      display: flex;
+      justify-content: flex-end;
+      &__list {
+            display: flex;
       }
       &__link {
-            line-height: calc(24 / 14 * 100%);
+            line-height: calc(28 / 14 * 100%);
             color: #66ff00;
             font-weight: 500;
             font-size: 18px;
@@ -58,26 +66,47 @@
             color: #409f01;
       }
 }
-.link-button {
+.menu__item:not(:last-child) {
+      margin: 0px 20px 0px 0px;
+}
+
+.icon-menu {
+      display: none;
+}
+
+.button {
+      display: inline-block;
       border: 1px solid rgba(70, 174, 0, 0.5);
-      padding: 5px 15px;
+      padding: 8px 16px;
       border-radius: 4px;
       background-color: rgba(80, 144, 12, 0.1);
       transition: all 0.3s ease 0s;
+      cursor: pointer;
 }
 
-.link-button:hover {
-      box-shadow: 0 4px 6px rgba(113, 255, 88, 0.25);
-}
-
-.link-account {
+.button-login span::before {
+      content: 'Sign in';
       color: #e1cb30;
-      text-transform: none;
       font-size: 18px;
+      letter-spacing: 0.5px;
 }
 
-.link-account:hover {
-      color: #b4a426;
+.button-profile span::before {
+      content: 'Profile';
+      color: #e1cb30;
+      font-size: 18px;
+      letter-spacing: 0.5px;
+}
+
+.button-logout span::before {
+      content: 'Sign out';
+      color: #e1cb30;
+      font-size: 18px;
+      letter-spacing: 0.5px;
+}
+
+.button:hover {
+      box-shadow: 0 4px 6px rgba(113, 255, 88, 0.25);
 }
 
 body._touch .menu__link {
@@ -88,26 +117,65 @@ body._touch .menu__link {
       left: 0;
 }
 
-@media (min-width: 767px) {
-      .menu__list {
-            display: flex;
-            align-items: center;
-      }
-      .menu_list > li {
-            padding: 10px 0;
+@media (max-width: 991.98px) {
+      .header {
+            &__container {
+                  min-height: 80px;
+            }
+            &__button {
+                  flex: 0 0 160px;
+            }
       }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
+      .icon-menu {
+            display: flex;
+            position: relative;
+            flex: 0 0 30px;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 18px;
+            margin: 0px 0px 0px 20px;
+            z-index: 5;
+            cursor: pointer;  
+      }
+      .icon-menu span,
+      .icon-menu::before,
+      .icon-menu::after {
+            background-color: #66ff00;
+            position: absolute;
+            width: 100%;
+            height: 10%;
+            left: 0;
+            transition: all 0.3s ease 0s;
+      }
+      .icon-menu::before,
+      .icon-menu::after {
+            content: '';
+      }
+      .icon-menu::before {
+            top: 0;
+      }
+      .icon-menu::after {
+            bottom: 0;
+      }
+      .icon-menu span {
+            top: 50%;
+            transform: scale(1) translate(0px, -50%);
+      }
+      .icon-menu._active span {
+            transform: scale(0) translate(0px, -50%);
+      }
+      .icon-menu._active::before {
+            top: 50%;
+            transform: rotate(-45deg) translate(0px, -50%);
+      }
+      .icon-menu._active::after {
+            bottom: 50%;
+            transform: rotate(45deg) translate(0px, 50%);
+      }
       .menu {
-            &__icon {
-                  display: block;
-                  position: relative;
-                  width: 30px;
-                  height: 18px;
-                  z-index: 5;
-                  cursor: pointer;
-            }
             &__body {
                   position: fixed;
                   top: 0;
@@ -120,9 +188,20 @@ body._touch .menu__link {
                   overflow: auto;
                   text-align: center;
             }
+            &__list {
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+            }
+            &__item {
+                  margin: 0;
+            }
             &__link  {
                   font-size: 24px;
             }
+      }
+      .menu__item:not(:last-child) {
+            margin: 0px 0px 25px 0px;
       }
       .menu__body::before {
             content: "";
@@ -132,48 +211,37 @@ body._touch .menu__link {
             left: 0;
             height: 70px;
             z-index: 2;
-      }     
-      .menu__icon span,
-      .menu__icon::before,
-      .menu__icon::after {
-            background-color: #66ff00;
-            position: absolute;
-            width: 100%;
-            height: 10%;
-            left: 0;
-            transition: all 0.3s ease 0s;
       }
-      .menu__icon::before,
-      .menu__icon::after {
-            content: '';
+}
+
+@media (max-width: 479.98px) {
+      .header__logo {
+            flex: 0 0 24px;
+            overflow: hidden;
       }
-      .menu__icon::before {
+      .button {
+            padding: 2px 5px;
+            box-shadow: 0 4px 6px rgba(113, 255, 88, 0.25);
+      }
+      .button-login span::before {
+            content: url(/img/icons/login_user.svg);
             top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
       }
-      .menu__icon::after {
-            bottom: 0;
+      .button-profile span::before {
+            content: url(/img/icons/verified_user.svg);
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
       }
-      .menu__icon span {
-            top: 50%;
-            transform: scale(1) translate(0px, -50%);
-      }
-      .menu__icon._active span {
-            transform: scale(0) translate(0px, -50%);
-      }
-      .menu__icon._active::before {
-            top: 50%;
-            transform: rotate(-45deg) translate(0px, -50%);
-      }
-      .menu__icon._active::after {
-            bottom: 50%;
-            transform: rotate(45deg) translate(0px, 50%);
-      }
-      .menu__list > li {
-            flex-wrap: wrap;
-            margin: 0px 0px 30px 0px;
-      }
-      
-      .menu__list > li:last-child {
-            margin-bottom: 0px;
+      .button-logout span::before {
+            content: url(/img/icons/exit.svg);
+            top: 0;
+            left: 0;
+            width: 15px;
+            height: 20px;
       }
 }

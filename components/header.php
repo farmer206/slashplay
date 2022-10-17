@@ -15,32 +15,34 @@ session_start();
 <body>
     <div id='preload' class="preloader">
         <div class="preloader__ring"></div>
-        <span class="preloader__text">loading...</span>
+        <span class="preloader__text">Loading...</span>
     </div>
     <div class="wrapper">
         <header class="header lock-padding">
             <div class="header__container container">
                 <a href='index.php' class="header__logo"><span>/</span>Play</a>
                 <div class="header__menu menu">
-                    <div class="menu__icon">
-                        <span></span>
-                    </div>
-                    <nav class="menu__body menu">
+                    <nav class="menu__body">
                         <ul class="menu__list">
-                            <li><a data-goto=".price" href="#" class="menu__link">Прайс</a></li>
-                            <li><a data-goto=".photo" href="#" class="menu__link">Фото</a></li>
-                            <li><a data-goto=".stats" href="#" class="menu__link">Статы</a></li>
-                            <li><a data-goto=".rules" href="#" class="menu__link">Правила</a></li>
-                            <li><a data-goto=".location" href="#" class="menu__link">Контакты</a></li>
-                            <?php
-                            if (!isset($_SESSION['id'])) {
-                                echo '<li><a href="/pages/page_login.php" class="menu__link link-account link-button">Sign in</a></li>';
-                            } else {
-                                echo '<li><a href="/pages/page_profile.php" class="menu__link link-account link-button">Profile</a></li>';
-                            }
-                            ?>
+                            <li class="menu__item"><a data-goto=".price" href="#" class="menu__link">Price</a></li>
+                            <li class="menu__item"><a data-goto=".photo" href="#" class="menu__link">Photo</a></li>
+                            <li class="menu__item"><a data-goto=".stats" href="#" class="menu__link">Stats</a></li>
+                            <li class="menu__item"><a data-goto=".rules" href="#" class="menu__link">Rules</a></li>
+                            <li class="menu__item"><a data-goto=".location" href="#" class="menu__link">Contacts</a></li>
                         </ul>
                     </nav>
+                    <div class="header__button">
+                        <?php
+                        if (!isset($_SESSION['id'])) {
+                            echo '<a href="/pages/page_login.php" class="button button-login"><span></span></a>';
+                        } else {
+                            echo '<a href="/pages/page_profile.php" class="button button-profile"><span></span></a>';
+                        }
+                        ?>
+                        <a href="#" class="icon-menu">
+                            <span></span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </header>
