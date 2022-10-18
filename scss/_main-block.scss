@@ -17,7 +17,6 @@
         letter-spacing: 0.2px;
         font-weight: 400;
         color: #46AE00;
-
         transform: translate(0px, 100%);
         opacity: 0;
         transition: all 0.8s ease 0s;
@@ -26,7 +25,6 @@
         color: #b8b6b4;
         font-size: 16px;
         line-height: 150%;
-
         transform: translate(0px, 100%);
         opacity: 0;
         transition: all 0.8s ease 0s;
@@ -98,17 +96,17 @@
 }
 
 /* ---При увеличении экрана MAIN-BLOCK--- */
-@media (min-width: 479px) {
+@media (min-width: 479.98px) {
     .main-block__button:not(:last-child) {
         margin-right: 10px;
     }
 }
 
 /* ---При уменьшении экрана MAIN-BLOCK--- */
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
     .main-block {
         &__body {
-            padding: 184px 0px 141px 0px;
+            // padding: 164px 0px 191px 0px;
         }
         &__body > *:not(:last-child) {
             margin: 0px 0px 45px 0px;
@@ -116,9 +114,9 @@
     }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 479.98px) {
     .main-block__body {
-        padding: 184px 0px 101px 0px;
+        // padding: 184px 0px 101px 0px;
     }
     .main-block__title {
         font-size: 26px;

@@ -19,7 +19,7 @@
                     </div>
                     <h3 class="item-service__title">Игры</h3>
                     <div class="item-service__text">
-                        Мощные ПК и большое<br>количество игр
+                        Мощные ПК и большое количество игр
                     </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@
                     </div>
                     <h3 class="item-service__title">Напитки</h3>
                     <div class="item-service__text">
-                        Обширный список напитков<br>и закусок по доступным ценам
+                        Обширный список напитков и закусок по доступным ценам
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
                     </div>
                     <h3 class="item-service__title">Админы</h3>
                     <div class="item-service__text">
-                        Всегда готовы прийти<br>к вам на помощь
+                        Всегда готовы прийти к вам на помощь
                     </div>
                 </div>
             </div>

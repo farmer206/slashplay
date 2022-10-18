@@ -2,32 +2,32 @@
 .services {
     &__body {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0px -15px -30px;
     }
     &__column {
-        flex: 1 0 20%;
+        padding: 0px 15px;
+        margin: 0px 0px 30px 0px;
+        flex: 0 1 25%;
     }
-
-    &__column:not(:last-child) {
-        margin: 0px 15px 0px 0px;
-    }
-
-    &__item:hover {
-        box-shadow: 0 4px 6px rgba(113, 255, 88, 0.25);
-    }
-
     &__item {
         height: 100%;
-        box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
-        border: 1px solid rgba(70, 174, 0, 0.5);
+        box-shadow: 0 2px 4px rgba(113, 255, 88, 0.25);
+        border-top: 1px solid rgba(70, 174, 0, 0.5);
+        border-left: 1px solid rgba(70, 174, 0, 0.5);
         padding: 15px;
-        background-color: rgba(80, 144, 12, 0.1);
-        border-radius: 4px;
+        background: rgba(80, 144, 12, 0.1);
+        border-radius: 10px;
+        text-align: center;
+        backdrop-filter: blur(1px);
+        transition: 0.5s;
+    }
+        &__item:hover {
+            transform: translateY(-50px);
     }
 }
 
 .item-service {
-    text-align: center;
     &__title {
         letter-spacing: 0.1px;
         font-size: 14px;
@@ -35,7 +35,6 @@
         color: #e1cb30;
         font-family: "Press Start 2P";
     }
-
     &__text {
         color: #b8b6b4;
         line-height: 142%;
@@ -46,24 +45,22 @@
     margin: 0px 0px 10px 0px;
 }
 
-/* ---При уменьшении экрана SERVICES--- */
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
     .services {
-        padding: 60px 0px 30px 0px;
-        &__body {
-            flex-wrap: wrap;
-        }      
+        padding: 80px 0px;
         &__column {
-            flex: 0 1 48.67%;
+            flex: 0 1 50%;
         }
-        &__column:not(:last-child) {
-            margin: 0px 0px 0px 0px;
+        &__item:hover {
+            transform: none;
         }
-        &__column:nth-child(1) {
-            margin-bottom: 20px;
-        }
-        &__column:nth-child(2) {
-            margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 560px) {
+    .services {
+        &__column {
+            flex: 0 1 100%;
         }
         &__item {
             border: none;
@@ -73,22 +70,6 @@
         }
         &__item:hover {
             box-shadow: none;
-        }
-    }
-}
-
-@media (max-width: 526px) {
-    .services {
-        &__body {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        &__column {
-            width: 274px;
-        }
-        &__column:not(:last-child) {
-            margin-bottom: 20px;
         }
     }
 }
