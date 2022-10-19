@@ -53,8 +53,8 @@
                 <div class="footer__column">
                     <div class="footer__label">Get in Touch</div>
                     <div class="footer__contacts contacts-footer">
-                        <a href="#" class="contacts-footer__item contacts-footer__item_phone">+7(911)407-36-68</a>
-                        <a href="#" class="contacts-footer__item contacts-footer__item_map">ул.Максима Горького 25, 4 этаж</a>
+                        <a href="tel:9114073668" class="contacts-footer__item contacts-footer__item_phone">+7(911)407-36-68</a>
+                        <a href="#" class="contacts-footer__item contacts-footer__item_map">г.Петрозаводск, ул.Максима Горького 25, 4 этаж</a>
                         <a href="#" class="contacts-footer__item contacts-footer__item_email">test@test.com</a>
                     </div>
                 </div>

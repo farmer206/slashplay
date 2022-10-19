@@ -1,7 +1,11 @@
 .stats {
-    padding: 30px 0px 60px 0px;
-    &__header {
-        margin-bottom: 50px;
+    padding: 30px 0px 0px 0px;
+    &__body {
+        padding: 50px 0;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 150%;
     }
 }
 
@@ -13,9 +17,7 @@
         flex-direction: column;
         white-space: nowrap;
         margin-bottom: 15px;
-        list-style-type: none; 
     }
-
     &__btn {
         display: inline-block;
         line-height: 142%;
@@ -27,58 +29,33 @@
         text-decoration: none;
         color: #e1cb30;
         border-radius: 4px;
+        border: 1px solid rgba(70, 174, 0, 0.5);
         background-color: rgba(80, 144, 12, 0.1);
-        border: 1px solid rgba(70, 174, 0, 0.5);   
         cursor: pointer;
         transition: all 0.3s ease 0s;
     }
-
     &__btn:not(:last-child) {
         margin-bottom: 20px;
     }
-
     &__btn-active {
         background-color: transparent;
         cursor: default;
     }
-
     &__pane {
         display: none;
     }
-
     &__pane-show {
         display: block;
     }
-
     &__content {
-        display: flex;
-        justify-content: space-between;
+        padding: 0px 0px 20px 40px;
     }
-
-    &__text {
-        max-width: 50%;
-        font-size: 18px;
-        line-height: 150%;
-        margin: 0 0 0 40px;
-        text-align: right;
-    }
-
-    &__list {
-        max-width: 496px;
-        padding: 0px 0px 0px 40px;
-    }
-
     &__list-item {
         font-size: 18px;
         line-height: 150%;
     }
-
     &__list-item span {
         color: #8cc63f;
-    }
-
-    &__list-item:first-child {
-        padding-top: 0;
     }
 }
 
@@ -88,24 +65,43 @@
     box-shadow: 0 2px 4px 0 rgb(140, 198, 63, 0.7);
 }
 
-@media (max-width: 992px) {
-    .tabs {        
-        &__content {
-            display: block;
+@media (max-width: 767.98px) {
+    .stats {
+        &__body {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 50px 0;
         }
         &__text {
-            max-width: 100%;
-            padding: 20px 0 0 40px;
-            margin: 0;
-            text-align: left;
+            font-size: 16px;
         }
     }
-}
-
-@media (max-width: 726px) {
     .tabs {
+        flex-direction: column;
+        margin: 0px 0px 50px 0px;
+        &__nav {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-bottom: 0px;
+        }
         &__btn {
+            flex: 0 1 33.333%;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.03);
+            border-radius: 0px;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             font-size: 16px;
+        }
+        &__btn:not(:last-child) {
+            margin-bottom: 0px;
+        }
+        &__btn-active {
+            background-color: rgba(255, 255, 255, 0.05);
+            cursor: default;
         }
         &__list-item {
             font-size: 16px;
@@ -113,50 +109,25 @@
         &__list-item span {
             font-size: 18px;
         }
-        &__text {
-            font-size: 16px;
-        }
-    }
-}
-
-@media (max-width: 467px) {
-    .tabs {
-        flex-direction: column;
-        max-width: 400px;
-        margin: 0 auto;
-        &__nav {
-            flex-direction: row;
-            margin: 0;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-        &__btn {
-            flex-shrink: 0;
-            flex-grow: 1;
-            border: none;
-            border-radius: 0;
-            box-shadow: none;
-        }
-        &__btn:not(:last-child) {
-            margin-bottom: 0;
-        }
-        &__btn-active {
-            border-bottom: 1px solid rgb(140, 198, 63, 0.03);
-            box-shadow: 0 2px 4px 0 rgb(140, 198, 63, 0.5);
-        }
         &__content {
-            padding: 1rem;
-        }
-        &__list {
-            padding: 0;
-        }
-        &__text {
-            padding: 0;
-            margin-top: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.05);
         }
     }
     .tabs__btn:not(.tabs__btn-active):hover,
     .tabs__btn:not(.tabs__btn-active):focus {
+        background-color: transparent;
         box-shadow: none;
+    }
+}
+
+@media (max-width: 390px) {
+    .tabs {
+        &__nav {
+            margin-bottom: 15px;
+        }
+        &__btn {
+            flex: 1 0 33.333%;
+        }
     }
 }
