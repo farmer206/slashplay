@@ -67,13 +67,13 @@
             <div class="footer__copy">&copy; 2022 Все права защищены</div>
             <div class="footer__social social">
                 <a href="#" class="social__item">
-                    <img src="img/icons/footer/telegram.svg" alt="Telegram">
+                    <img src="/img/icons/footer/telegram.svg" alt="Telegram">
                 </a>
                 <a class="social__item" target="_blank" href="https://www.youtube.com/channel/UCkKVdpVWu8r3rE_sNlhnFjg">
-                    <img src="img/icons/footer/youtube.svg" alt="Youtube">
+                    <img src="/img/icons/footer/youtube.svg" alt="Youtube">
                 </a>
                 <a class="social__item" target="_blank" href="https://vk.com/slashplay_ptz">
-                    <img src="img/icons/footer/vk.svg" alt="ВКонтакте">
+                    <img src="/img/icons/footer/vk.svg" alt="ВКонтакте">
                 </a>
             </div>
         </div>

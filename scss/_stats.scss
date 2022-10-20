@@ -82,7 +82,7 @@
         &__nav {
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
+            // flex-wrap: wrap;
             margin-bottom: 0px;
         }
         &__btn {
@@ -121,13 +121,15 @@
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 381px) {
     .tabs {
         &__nav {
+            flex-wrap: wrap;
             margin-bottom: 15px;
         }
         &__btn {
-            flex: 1 0 33.333%;
+            flex-grow: 1;
+            flex-shrink: 0;
         }
     }
 }
