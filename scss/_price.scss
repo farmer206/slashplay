@@ -15,7 +15,7 @@
     &__header {
         margin-bottom: 18px;
     }
-    &__titile {
+    &__title {
         line-height: 142%;
         font-weight: 400;
         color: #46AE00;
@@ -115,7 +115,7 @@
 }
 
 // При уменьшении экрана блока PRICE
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
     .price {
         padding: 30px 0px 30px 0px;
         &__container {
@@ -155,7 +155,7 @@
         &__content {
             margin-bottom: 30px;
         }
-        &__titile {
+        &__title {
             text-align: center;
             font-size: 18px;
         }

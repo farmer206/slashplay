@@ -33,8 +33,8 @@
         <section class="page__loyalty loyalty">
             <div class="loyalty__container container">
                 <div class="loyalty__header header-block">
-                    <h2 class="heder-block__titile">Прайс лист</h2>
-                    <div class="heder-block__sub-titile">
+                    <h2 class="header-block__title">Прайс лист</h2>
+                    <div class="header-block__sub-title">
                     </div>
                 </div>
                 <div class="loyalty__body">

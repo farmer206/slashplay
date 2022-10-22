@@ -536,7 +536,7 @@ body._touch .menu__link {
 .price__header {
   margin-bottom: 18px;
 }
-.price__titile {
+.price__title {
   line-height: 142%;
   font-weight: 400;
   color: #46AE00;
@@ -632,7 +632,7 @@ body._touch .menu__link {
   border-right: none;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
   .price {
     padding: 30px 0px 30px 0px;
   }
@@ -670,7 +670,7 @@ body._touch .menu__link {
   .price__content {
     margin-bottom: 30px;
   }
-  .price__titile {
+  .price__title {
     text-align: center;
     font-size: 18px;
   }
@@ -720,7 +720,7 @@ body._touch .menu__link {
   }
 }
 .stats {
-  padding: 30px 0px 0px 0px;
+  padding: 60px 0px 0px 0px;
 }
 .stats__body {
   padding: 50px 0;
@@ -849,7 +849,7 @@ body._touch .menu__link {
   }
 }
 .rules {
-  padding: 30px 0px 60px 0px;
+  padding: 60px 0px 60px 0px;
 }
 .rules__header {
   margin: 0px 0px 40px 0px;
@@ -1139,7 +1139,7 @@ body._touch .menu__link {
 }
 /* ---LOCATION--- */
 .location {
-  padding: 30px 0px 60px 0px;
+  padding: 60px 0px 60px 0px;
 }
 .location__header {
   margin: 0px 0px 100px 0px;
@@ -1227,7 +1227,7 @@ body._touch .menu__link {
     padding: 0px 0px 0px 50px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
   .location__header {
     margin: 0px 0px 30px 0px;
   }
@@ -1248,7 +1248,7 @@ body._touch .menu__link {
     font-size: 18px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .location__video:not(:last-child) {
     margin: 30px 0px 0px 0px;
   }
@@ -1670,7 +1670,7 @@ body._touch .menu__link {
 }
 
 /* ---При уменьшении page_loyalty--- */
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .loyalty-table__info {
     padding: 0px 15px;
     font-size: 14px;
@@ -1896,15 +1896,14 @@ span.preloader__text {
   text-align: center;
   letter-spacing: 0.2px;
 }
-
-.heder-block__titile {
+.header-block__title {
   line-height: 142%;
   font-weight: 400;
   color: #46AE00;
   font-size: 24px;
   text-transform: uppercase;
 }
-.heder-block__sub-titile {
+.header-block__sub-title {
   line-height: 142%;
   color: #e1cb30;
   font-size: 16px;
@@ -1932,6 +1931,9 @@ span.preloader__text {
 @media (max-width: 767.98px) {
   .container {
     max-width: none;
+  }
+  .header-block__title {
+    font-size: 18px;
   }
 }
 /* ---MOBILE SMAL--- */

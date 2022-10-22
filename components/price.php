@@ -2,7 +2,7 @@
     <div class="price__container container">
         <div class="price__content">
             <div class="price__header header-block anim-items anim-no-hide">
-                <h2 class="price__titile anim-show-left">Стоимость аренды</h2>
+                <h2 class="price__title anim-show-left">Стоимость аренды</h2>
             </div>
             <div class="price__text anim-items anim-no-hide">
                 <p class="anim-show-left">Здесь ты сможешь прикоснуться к закрытому и уникальному сообществу единомышленников, где тебя ждёт океан эмоций, огромное количество новых знакомств, ценные призы, приглашения на закрытые мероприятия и скидки. Ты станешь одним из вдохновителей и творцов киберспорта в России!</p>

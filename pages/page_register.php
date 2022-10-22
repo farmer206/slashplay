@@ -40,8 +40,8 @@ if (isset($_SESSION['id'])) {
         <section class="page__register register">
             <div class="register__container container">
                 <div class="register__header header-block">
-                    <h2 class="heder-block__titile">Регистрация</h2>
-                    <div class="heder-block__sub-titile">
+                    <h2 class="header-block__title">Регистрация</h2>
+                    <div class="header-block__sub-title">
                     </div>
                 </div>
                 <div class="register__body">

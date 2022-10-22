@@ -45,8 +45,8 @@ if (!isset($_SESSION['id'])) {
         <section class="page__profile profile">
             <div class="profile__container container">
                 <div class="profile__header header-block">
-                    <h2 class="heder-block__titile">Мой профиль</h2>
-                    <div class="heder-block__sub-titile">
+                    <h2 class="header-block__title">Мой профиль</h2>
+                    <div class="header-block__sub-title">
                     </div>
                 </div>
                 <div class="profile__body">

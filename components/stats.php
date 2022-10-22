@@ -1,8 +1,8 @@
 <section class="page__stats stats">
     <div class="stats__container container">
         <div class="stats__header header-block">
-            <h2 class="heder-block__titile">Техничекие характеристики</h2>
-            <div class="heder-block__sub-titile">
+            <h2 class="header-block__title">Техничекие характеристики</h2>
+            <div class="header-block__sub-title">
             </div>
         </div>
         <div class="stats__body">

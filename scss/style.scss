@@ -128,8 +128,6 @@ span.preloader__text {
 }
 /* ---Preloader end--- */
 
-
-
 .up-button {
     position: fixed;
 	bottom: 30px;
@@ -236,16 +234,14 @@ span.preloader__text {
 .header-block {
     text-align: center;
     letter-spacing: 0.2px;
-}
-.heder-block {
-    &__titile {
+    &__title {
         line-height: 142%;
         font-weight: 400;
         color: #46AE00;
         font-size: 24px;
         text-transform: uppercase;
     }
-    &__sub-titile {
+    &__sub-title {
         line-height: 142%;
         color: #e1cb30;
         font-size: 16px;
@@ -275,6 +271,11 @@ span.preloader__text {
 @media (max-width: 767.98px) {
     .container {
         max-width: none;
+    }
+    .header-block {
+        &__title {
+            font-size: 18px;
+        }
     }
 }
 /* ---MOBILE SMAL--- */

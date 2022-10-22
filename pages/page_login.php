@@ -40,8 +40,8 @@ if (isset($_SESSION['id'])) {
         <section class="page__login login">
             <div class="login__container container">
                 <div class="login__header header-block">
-                    <h2 class="heder-block__titile">Войти в аккаунт</h2>
-                    <div class="heder-block__sub-titile">
+                    <h2 class="header-block__title">Войти в аккаунт</h2>
+                    <div class="header-block__sub-title">
                     </div>
                 </div>
                 <div class="login__body">
